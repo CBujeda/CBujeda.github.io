@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara Bujeda - Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../css/scroller.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar_top_app {
+            background-color: #333 !important;
+        }
+
+        .navbar_top_app .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar_top_app .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav li {
+            transition: transform 0.3s, color 0.3s;
+            /* Transición suave de 0.3 segundos */
+        }
+
+        .navbar-nav li:hover {
+            transform: translateY(-3px);
+            /* Mueve el elemento hacia arriba 3 píxeles */
+        }
+
+        .profile_column {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .info_column {
+            background-color: #0d1117;
+        }
+
+        .section {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .mincolumn_height {
+            min-height: 100vh;
+        }
+
+        .seleccion {
+            font-weight: bold;
+            color: #ff88b7;
+            /* Color rosa suave */
+        }
+
+        /*  -----------------------------------*/
+       
+        .kawaii-card {
+            background-color: #FFD7F5;
+        }
+
+        .kawaii-title {
+            color: #FF00E1;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+
+        .kawaii-description {
+            color: #FF80F2;
+            font-size: 16px;
+        }
+
+        .kawaii-button {
+            color: #FF00E1;
+            border-color: #FF00E1;
+            margin-top: 15px;
+        }
+
+        .kawaii-button:hover {
+            background-color: #FF80F2;
+            border-color: #FF80F2;
+        }
+
+        .kawaii-button:focus {
+            box-shadow: none;
+        }
+
+        /*****************************************************************/
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+        .kawaii-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #FF66FF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .kawaii-image {
+            display: block;
+        }
+
+        .kawaii-quote {
+            color: #FF66FF;
+            font-size: 20px;
+        }
+
+        .kawaii-subtitle {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF66FF;
+            margin-top: 30px;
+        }
+
+        .kawaii-table {
+            color: #FFFFFF;
+            margin-top: 20px;
+        }
+
+        .kawaii-table th {
+            background-color: #FF66FF;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .kawaii-table td {
+            background-color: #4D4D4D;
+            color: #FFFFFF;
+        }
+
+
+
+        .kawaii-list {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .kawaii-list-item {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FF66FF;
+            margin-top: 10px;
+        }
+
+        .kawaii-sublist {
+            list-style-type: none;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .kawaii-code {
+            background-color: #4D4D4D;
+            color: #FFFFFF;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .kawaii-checklist {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .kawaii-checklist-item {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FF66FF;
+            margin-top: 10px;
+        }
+        .kawaii-checklist-item-no {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff668a;
+            margin-top: 10px;
+        }
+
+        .kawaii-checklist-item::before {
+            content: '✔ ';
+        }
+        .kawaii-checklist-item-no::before {
+            content: '✘ ';
+        }   
+
+        pre{
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar_top_app  navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clara Bujeda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../../index.html"><span>Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyects.html"><span class="seleccion">Proyectos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps.html"><span>Aplicaciones</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobremi.html"><span>Acerca de</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacto.html"><span>Contacto</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-12">
+                <h1>NIB - NINE IMAGE BOARD</h1>
+                
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="https://github.com/CBujeda/TFG-PROYECT-Nine_Image_Board"
+                                    class="btn kawaii-button">Repositorio</a>
+                                <a href="https://github.com/CBujeda/TFG-PROYECT-Nine_Image_Board/archive/refs/heads/main.zip"
+                                    class="btn kawaii-button">Descargar</a>
+        
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="pdf-container">
+                                    <embed src="../../docs/NIB/PROYECTO_NIB_0.1.1-SNAPSHOT.pdf" width="100%" height="1000px" type="application/pdf">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!---------------------------------------------------------------------------------------->
+                    <div class="col-md-6 col-sm-12">
+                        <blockquote class="mt-4">
+                            <p class="kawaii-quote">v0.1.1</p>
+                        </blockquote>
+
+                        <h2 class="kawaii-subtitle">Requisitos Minimos:</h2>
+
+                        <table class="table table-bordered kawaii-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Version</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Java</td>
+                                    <td>17</td>
+                                    <td style="text-align: center;">
+                                        <a target="_blank" href="https://adoptium.net/es/temurin/releases/?version=17"
+                                            class="btn btn-outline-light btn-sm ">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MySql</td>
+                                    <td>8</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Node js</td>
+                                    <td>v18.12.0</td>
+                                    <td style="text-align: center;">
+                                        <a target="_blank" href="https://nodejs.org/dist/v18.12.0"
+                                            class="btn btn-outline-light btn-sm" >Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>npm package manager</td>
+                                    <td>v8.19.2</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 class="kawaii-subtitle">Uso e Instalación</h2>
+
+                        <ul class="kawaii-list">
+                            <li class="kawaii-list-item">En Windows</li>
+                            <ul class="kawaii-sublist">
+                                <li>Lanzador Grafico - APPSTART.exe - ☑️</li>
+                                <li>Lanzador de Consola - Start Auto.bat - ☑️</li>
+                            </ul>
+                            <li class="kawaii-list-item">En Linux</li>
+                            <ul class="kawaii-sublist">
+                                <li>Pendiente</li>
+                            </ul>
+                        </ul>
+
+                        <h2 class="kawaii-subtitle">Videos</h2>
+                        <a target="_blank" href="https://youtu.be/7KrkzgEfUC0">
+                            <img src="../../img/proyects/video_preview.png" width="280" height="200"
+                                alt="Video Thumbnail" class="kawaii-image">
+                        </a>
+
+                        <h2 class="kawaii-subtitle">Configuracion</h2>
+
+                        <ul class="kawaii-list">
+                            <li class="kawaii-list-item">Automatica</li>
+                            <ul class="kawaii-sublist">
+                                <li>config.properties</li>
+                                <pre class="kawaii-code">
+# CONFIGURATION
+
+# Back Backend 
+NIB_B_Port = 3000
+NIB_B_ip = localhost
+NIB_B_user = root
+NIB_B_pass = root
+NIB_B_Version = 0.1.1-SNAPSHOT
+
+# Frontend
+NIB_F_Port = 8080
+NIB_F_ip = localhost
+
+# MySql
+MySql_Port = 3306
+MySql_ip = localhost
+MySql_user = root
+MySql_pass = root 
+MySql_bbdd = ninbooru
+
+# Personalize paths
+javaPath=C:\\Program Files\\Java\\jdk-17\\bin\\java.exe
+# ngPath=C:\\Users\\USUARIO\\AppData\\Roaming\\npm\\ng.cmd
+                            </pre>
+                            </ul>
+                        </ul>
+
+                        <h2 class="kawaii-subtitle">Soporte OS (Testado)</h2>
+
+                        <ul class="kawaii-checklist">
+                            <li class="kawaii-checklist-item">Windows 11</li>
+                            <li class="kawaii-checklist-item">Windows 10</li>
+                            <li class="kawaii-checklist-item-no">Windows 7</li>
+                            <li class="kawaii-checklist-item-no">Ubuntu (Linux)</li>
+                            <li class="kawaii-checklist-item-no">Devian (Linux)</li>
+                            <li class="kawaii-checklist-item-no">MacOS</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>

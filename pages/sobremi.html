@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara Bujeda - Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/scroller.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar_top_app {
+            background-color: #333 !important;
+        }
+
+        .navbar_top_app .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar_top_app .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav li {
+            transition: transform 0.3s, color 0.3s; /* Transición suave de 0.3 segundos */
+        }
+        
+        .navbar-nav li:hover {
+            transform: translateY(-3px); /* Mueve el elemento hacia arriba 3 píxeles */
+        }
+        
+        .profile_column {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .info_column {
+            background-color: #0d1117;
+        }
+
+        .section {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .mincolumn_height {
+            min-height: 100vh;
+        }
+
+        .seleccion {
+            font-weight: bold;
+            color: #ff88b7; /* Color rosa suave */
+        }
+        .contenedor_logos{
+            background-color: rgb(255, 241, 253);
+            border-radius: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar_top_app  navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clara Bujeda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">  
+                    <li class="nav-item">
+                        <a class="nav-link "  href="../index.html"><span >Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proyects.html"><span>Proyectos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./apps.html"><span>Aplicaciones</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobremi.html"><span class="seleccion">Acerca de</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html"><span>Contacto</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 profile_column mincolumn_height">
+                <div class=" text-white  py-5">
+                    <div class="text-center">
+                        <img src="https://avatars.githubusercontent.com/u/95882405" alt="Foto de Clara Bujeda"
+                            style="width: 200px; height: 200px; border-radius: 50%;">
+                    </div>
+
+                    <div class="text-left border border-1 border-white rounded p-2 mt-3">
+                        <p class="lead">Clara Bujeda</p>
+                        <p>CBujeda · she/her</p>
+
+                        <div>
+                            <a href="https://es.linkedin.com/in/clara-bujeda" target="_blank">
+                                <img src="../img/linkedin.svg"
+                                    width="42" height="30" alt="linkedin logo" /></a>
+                            <a href="https://youtube.com/@clarabujeda" target="_blank">
+                                <img src="../img/youtube.svg"
+                                    width="42" height="30" alt="youtube logo" /></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 info_column mincolumn_height pt-5 ps-3 pe-3   ">
+
+                <div>
+                    <img src="https://github-readme-stats.vercel.app/api?username=CBujeda&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=es&hide_border=true&order=1"
+                        height="150" alt="stats graph" />
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=CBujeda&locale=es&hide_title=false&layout=compact&card_width=320&langs_count=100&theme=dracula&hide_border=true&order=2"
+                        height="150" alt="languages graph" />
+                    <img src="https://streak-stats.demolab.com?user=CBujeda&locale=es&mode=daily&theme=dracula&hide_border=true&border_radius=5&date_format=j/n[/Y]&order=3"
+                        height="150" alt="streak graph" />
+                </div>
+
+
+                <div class="text-center border border-1 border-white rounded mt-3 ms-2 me-2">
+                    <img src="https://raw.githubusercontent.com/CBujeda/CBujeda/output/github-contribution-grid-snake.svg"
+                        alt="Snake animation" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar fixed-bottom footer text-center ">
+        <div class="container-fluid text-center">
+            <p>&copy; 2023 Clara Bujeda. Todos los derechos reservados.</p>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
