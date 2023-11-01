@@ -10,7 +10,7 @@
             color: #333;
             text-decoration: underline;
         }
-        p {
+        span {
             color: #666;
             font-size: 1.2em;
         }
@@ -29,12 +29,42 @@
             background-color: #008000;
             color: #f0f0f0;
         }
+        .box_app{
+            /*border: 1px solid black; */
+            border-bottom: 1px solid rgb(136, 136, 136);
+            display: table;
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        table{
+            width: 100%;
+        }
+        table .col2{
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
    <!-- <a href="../index.html">◄</a>--> 
     <h1> APPS</h1>
-    <p id="floating-clock"><b>Floating Clock</b></p>    
-    <a href="./floting_clock/info.html">Info</a><a href="./floting_clock/v.1.0.0 Portable.zip">v1.0.0 Portable</a>
+    <div class="box_app">
+        <table>
+            <tr>
+                <td><span id="floating-clock"><b>Floating Clock</b></span> </td>
+                <td class="col2"><a href="./floting_clock/info.html">Info</a></td>
+            </tr>
+        </table> 
+    </div>
+    <div class="box_app">
+        <table>
+            <tr>
+                <td><span id="floating-clock"><b>NIB</b></span> </td>
+               <!-- <td class="col2"><a href="../pages/proyects/NIB.html">Info</a></td>-->
+            </tr>
+        </table> 
+    </div>
 </body>
 </html>

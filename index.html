@@ -120,8 +120,22 @@
             margin-top: 5px;
         }
         
+        .logo{
+            height: 100px;
+                        
+        }
 
-
+        @media only screen and (max-width: 600px) {
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;  
+            }
+        }
+        .social-title{
+            color: white;
+        }
 
         
         /* Additional styling can be added as needed */
@@ -131,79 +145,92 @@
 
 <body class="general">
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
-                <img style="max-height: 100px;" src="./img/ninelogo.svg">
+                <img class="logo"  src="./img/ninelogo.svg">
             </div>
-        </div>
-    </div>
-
-    <div class="container-fluid ">
-        <div class="row ms-2 mt-2 justify-content-center">
-            <div class="col-lg-8 col-sm-12 ">
+            <div class="col-12">
                 <div class="row">
-                    <div class="col-12 bloque-inicio">
-                        <span class="titulo">BIENVENID@ A NINE!</span><br>
-                        <div>
-                            <div style="text-align: center;">
-                                <img src="https://profile-counter.glitch.me/CBujeda/count.svg?"  /><br>
+                    <div class="col-lg-8">
+                        <div class="row m-1">
+                            <div class="col-12 bloque-inicio">
+                                <span class="titulo">BIENVENID@ A NINE!</span><br>
+                                <div>
+                                    <div style="text-align: center;">
+                                        <img src="https://profile-counter.glitch.me/CBujeda/count.svg?"  /><br>
+                                        
+                                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=CBujeda&amp;locale=es&amp;hide_title=false&amp;layout=compact&amp;card_width=320&amp;langs_count=100&amp;theme=dracula&amp;hide_border=true&amp;order=2" height="150" alt="languages graph">
+                                        <!--
+                                        <img src="https://streak-stats.demolab.com?user=CBujeda&amp;locale=es&amp;mode=daily&amp;theme=dracula&amp;hide_border=true&amp;border_radius=5&amp;date_format=j/n[/Y]&amp;order=3" height="150" alt="streak graph">
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row m-1">
+                            <div class="col-12 bloque-inicio mt-2 pb-2">
+                                <span class="titulo">PROYECTOS</span><br>
                                 
-                                <img src="https://github-readme-stats.vercel.app/api/top-langs?username=CBujeda&amp;locale=es&amp;hide_title=false&amp;layout=compact&amp;card_width=320&amp;langs_count=100&amp;theme=dracula&amp;hide_border=true&amp;order=2" height="150" alt="languages graph">
-                                <!--
-                                <img src="https://streak-stats.demolab.com?user=CBujeda&amp;locale=es&amp;mode=daily&amp;theme=dracula&amp;hide_border=true&amp;border_radius=5&amp;date_format=j/n[/Y]&amp;order=3" height="150" alt="streak graph">
-                                -->
+        
+                            
+        
+                                <iframe src="./pages/subpages/proyects.html"></iframe>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 bloque-inicio mt-2 pb-2">
-                        <span class="titulo">PROYECTOS</span><br>
-                        
 
                     
+                    <div class="col-lg-4">
+                        <div class="row m-1">
+                            <div class="col-12 bloque-inicio pb-2">
+                                <span class="titulo ms-2 ">Menu</span><br>
+                                <div class="ms-2 futuristic-menu">
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link" href="#">Home</a>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link" href="./pages/proyects.html">Proyectos</a>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link" href="./pages/apps.html">Apps</a>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link" href="./pages/sobremi.html">Sobre Mi</a>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link" href="./pages/contacto.html">Contacto</a>
+                                    </div>
+                                    <div class="social-title">
+                                        <p>Social</p>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link" href="https://github.com/CBujeda">GitHub</a>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link futuristic-box" href="https://www.youtube.com/@clarabujeda">Youtube</a>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link futuristic-box" href="https://es.linkedin.com/in/clara-bujeda">Linkedin</a>
+                                    </div>
+                                    <div class="romboide-container">
+                                        <a class="futuristic-link futuristic-box" href="#">Instagram</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
 
-                        <iframe src="./pages/subpages/proyects.html"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="row ms-1 me-2">
-                    <div class="col-12 bloque-inicio pb-2">
-                        <span class="titulo ms-2 ">Menu</span><br>
-                        <div class="ms-2 futuristic-menu">
-                            <div class="romboide-container">
-                                <a class="futuristic-link" href="#">Home</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link" href="./pages/sobremi.html">Sobre Mi</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link" href="./pages/proyects.html">Proyectos</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link" href="./pages/apps.html">Apps</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link" href="https://github.com/CBujeda">GitHub</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link futuristic-box" href="https://www.youtube.com/@clarabujeda">Youtube</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link futuristic-box" href="https://es.linkedin.com/in/clara-bujeda">Linkedin</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link futuristic-box" href="#">Instagram</a>
-                            </div>
-                            <div class="romboide-container">
-                                <a class="futuristic-link" href="./pages/contacto.html">Contacto</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+
     </div>
+
+
+
 </html>
