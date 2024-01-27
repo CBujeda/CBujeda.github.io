@@ -1,0 +1,15 @@
+.shell{
+    background-color: rgb(36, 36, 36);
+    color: green;
+    font-family: consolas;
+    height: 30vh;
+}
+.shell textarea{
+    background-color: rgb(36, 36, 36);
+    color: green;
+    font-family: consolas;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    resize:none;
+}
