@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara Bujeda - Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/scroller.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar_top_app {
+            background-color: #333 !important;
+        }
+
+        .navbar_top_app .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar_top_app .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav li {
+            transition: transform 0.3s, color 0.3s;
+            /* Transición suave de 0.3 segundos */
+        }
+
+        .navbar-nav li:hover {
+            transform: translateY(-3px);
+            /* Mueve el elemento hacia arriba 3 píxeles */
+        }
+
+        .profile_column {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .info_column {
+            background-color: #0d1117;
+        }
+
+        .section {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .mincolumn_height {
+            min-height: 100vh;
+        }
+
+        .seleccion {
+            font-weight: bold;
+            color: #ff88b7;
+            /* Color rosa suave */
+        }
+
+        /* Cards -----------------------------------*/
+        .card {
+            background-color: #FCE6FF;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-img-top {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        
+
+        .kawaii-card {
+            background-color: #FFD7F5;
+
+        }
+
+        .dark-card {
+            background-color: #386ca0;
+
+        }
+
+        .kawaii-title {
+            color: #FF00E1;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+
+        .kawaii-description {
+            color: #FF80F2;
+            font-size: 16px;
+        }
+
+        .kawaii-button {
+            color: #FF00E1;
+            border-color: #FF00E1;
+            margin-top: 15px;
+        }
+
+        .kawaii-button:hover {
+            background-color: #FF80F2;
+            border-color: #FF80F2;
+        }
+
+        .kawaii-button:focus {
+            box-shadow: none;
+        }
+
+        .isDisabled {
+            cursor: not-allowed;
+            
+            
+          }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar_top_app  navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clara Bujeda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html"><span>Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proyects.html"><span class="seleccion">Proyectos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./apps.html"><span>Aplicaciones</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobremi.html"><span>Acerca de</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html"><span>Contacto</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="row">
+
+                    <!-- WD vide-->
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dark-card">
+                            <img class="card-img-top" src="../img/proyects/WDvide.svg" alt="Cute Image">
+                            <div class="card-body">
+                                <h5 class="card-title kawaii-title">WDvide</h5>
+                                <p class="card-text kawaii-description">Video Streaming Server</p>
+                                <a href="#" class="btn btn-outline-primary kawaii-button isDisabled">En desarrollo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NIB-->
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card kawaii-card">
+                            <img class="card-img-top" src="../img/proyects/Logo_Fondo_Empty.png" alt="Cute Image">
+                            <div class="card-body">
+                                <h5 class="card-title kawaii-title">NIB</h5>
+                                <p class="card-text kawaii-description">NINE IMAGE BOARD</p>
+                                <a href="./proyects/NIB.html" class="btn btn-outline-primary kawaii-button">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
