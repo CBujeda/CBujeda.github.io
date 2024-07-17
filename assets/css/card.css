@@ -1,0 +1,83 @@
+:root{
+    /*** Colors ***/
+        /*Navigator*/
+    --backgound-color-main:#29272A;
+    --default-text:#C9C9CB;
+    --hover-text:#7F617B;
+        /*Content*/
+    --box-back-color:#3E3630;
+    --default-border-color:#C9C9CB;
+    --title-box-color:#A17A98;
+    --formas-back-color:#7B6C81;
+
+    --button-back-color:#774069;
+    --apartado-text-color:#C0A5A9;
+    /*** Fonts ***/
+
+    /*** Sizes ***/
+    --size-profile-image: 50px;
+    --margin-content-top:30px;
+    --video-size: 400px;
+}
+
+.proyecto {
+    position: relative;
+    border: 2px solid #ffffff;
+    background: #fff;
+}
+
+.header-text-proyect {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    background-color: var(--box-back-color);
+    color: var(--default-text);
+    border: 3px solid var(--default-border-color);
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content_proyect {
+    border: 3px solid #ffffff;
+}
+.content_proyect:hover{
+    border: 0px solid #000;
+    cursor: pointer;
+}
+
+.content_proyect img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.buttons_proyect {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
+.btn_proyect {
+    
+    border: 2px solid #fff  ;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+}
+
+.btn_view{
+    background: #3A395E;
+}
+
+.btn_proyect:hover {
+    background: #7C3551;
+}
+
+.btn_play{
+    background: #37403B;    
+}
