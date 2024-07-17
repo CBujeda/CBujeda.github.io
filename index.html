@@ -1,257 +1,167 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clara Bujeda - Inicio</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <script src="./js/bootstrap.js"></script>
-    <link rel="stylesheet" href="./css/scroller.css">
-
-
-
-    <style>
-        @font-face {
-            font-family: 'BestTen';
-            /* Nombre de la fuente que usarás */
-            src: url('./fonts/BestTen-CRT.otf') format('opentype');
-            /* Ruta al archivo de fuente OTF */
-        }
-
-        body {
-            font-family: "BestTen";
-        }
-
-        /* =================================================================*/
-
-        iframe {
-            width: 100%;
-            min-height: 300px;
-            border: none;
-            overflow: auto;
-        }
-
-        /* Estilo personalizado para la barra de desplazamiento */
-        .custom-iframe::-webkit-scrollbar {
-            width: 10px;
-            background-color: #f2f2f2;
-            border-radius: 8px;
-        }
-
-        .custom-iframe::-webkit-scrollbar-thumb {
-            background-color: #999;
-            border-radius: 8px;
-        }
-
-        .custom-iframe::-webkit-scrollbar-thumb:hover {
-            background-color: #666;
-        }
-
-        /* =================================================================*/
-
-        .general {
-            background-color: rgb(20, 20, 20);
-        }
-
-        .bloque-inicio {
-            border-radius: 5px;
-            border-color: rgb(105, 105, 105);
-            border-style: solid;
-            color: white;
-            border-width: 1px;
-        }
-
-        .titulo {
-            color: rgb(184, 22, 125);
-            font-size: 130%;
-            font-weight: bold;
-        }
-
-        .litlle_box {
-            border-color: white;
-        }
-
-
-        /* menu */
-
-        .futuristic-menu {
-            font-family: "BestTen", 'Arial', sans-serif;
-            color: #333;
-        }
-
-        .futuristic-link {
-            text-decoration: none;
-            color: #66ccff;
-            transition: color 0.3s ease;
-            display: block;
-            padding: 10px;
-        }
-
-
-
-        .romboide-container {
-            position: relative;
-            transform: skewX(20deg);
-            margin-bottom: 5px;
-        }
-
-        .romboide-container a {
-            display: block;
-            text-decoration: none;
-            background-color: #393939;
-            color: #ff99cc;
-            transform: skewX(-20deg);
-            padding: 10px 15px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .futuristic-link:hover {
-            color: #6062ff;
-        }
-
-        .futuristic-box {
-            background-color: #ff99cc;
-            color: #fff;
-            font-weight: bold;
-            padding: 2px 6px;
-            display: inline-block;
-            margin-top: 5px;
-        }
-
-        .logo {
-            height: 100px;
-
-        }
-
-        @media only screen and (max-width: 600px) {
-            img {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-        }
-
-        .social-title {
-            color: white;
-        }
-
-        /* Additional styling can be added as needed */
-    </style>
+    <title>Clara Bujeda</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/card.css">
+    <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 
-<body class="general">
-
+<body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center">
-                <img class="logo" src="./img/ninelogo.svg">
+        <div class="navigator">
+            <!--NavBar-->
+            <div class="row mt-2">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-6 container_title">
+                    <div class="profile_image">
+                    </div>
+                    <span class="title_profile">Clara Bujeda</span>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-6 container_menu">
+                    <ul class="nav justify-content-end link_menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trayectory.html">Trayectoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="row m-1">
-                            <div class="col-12 bloque-inicio">
-                                <span class="titulo">BIENVENID@ A NINE!</span><br>
-                                <div>
-                                    <div style="text-align: center;">
-                                        <img src="https://profile-counter.glitch.me/CBujeda/count.svg?" /><br>
+        </div>
 
-                                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=CBujeda&amp;locale=es&amp;hide_title=false&amp;layout=compact&amp;card_width=320&amp;langs_count=100&amp;theme=dracula&amp;hide_border=true&amp;order=2"
-                                            height="150" alt="languages graph">
-                                        <!--
-                                        <img src="https://streak-stats.demolab.com?user=CBujeda&amp;locale=es&amp;mode=daily&amp;theme=dracula&amp;hide_border=true&amp;border_radius=5&amp;date_format=j/n[/Y]&amp;order=3" height="150" alt="streak graph">
-                                        -->
+
+
+        <div class="content mt-1">
+            <!--Content-->
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="about-me-box">
+                                <p><span class="title_box">Sobre Mi</span></p>
+                                <p class="text_box_basic">
+                                    Hola! Soy Clara, soy estudiante del grado de Ingenieria Informatica Tengo <span
+                                        id="edad">21</span> años
+                                </p>
+                                <script src="./assets/js/dateload.js"></script>
+                            </div>
+                            <div class="social_box">
+                                <a href="https://cbujeda.blogspot.com/" target="_blank">
+                                    <div>
+                                        <img src="./assets/img/icons/social/blogger.svg">
                                     </div>
-                                </div>
+                                </a>
+                                <a href="https://mastodon.social/@bujeda" target="_blank">
+                                    <div>
+                                        <img src="./assets/img/icons/social/mastodont.svg">
+                                    </div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/clara-bujeda/" target="_blank">
+                                    <div>
+                                        <img src="./assets/img/icons/social/linkedin.svg">
+                                    </div>
+                                </a>
+                                <a href="https://github.com/CBujeda" target="_blank">
+                                    <div>
+                                        <img src="./assets/img/icons/social/github.svg">
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/@clarabujeda" target="_blank">
+                                    <div>
+                                        <img src="./assets/img/icons/social/youtube.svg">
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
-                        <!--
-                        <div class="row m-1">
-                            <div class="col-12 bloque-inicio mt-2 pb-2">
-                                <span class="titulo">Youtube</span><br>
-                                <div class="videoWrapper">
-                                    <iframe
-                                        src="https://www.youtube.com/embed?listType=playlist&list=CfHDydGpJahGwQAPLCavXw&index=2">
-                                    </iframe>
-                                </div>
 
+                    </div>
 
-
-
-                            </div>
-                        </div>
-                        -->
-
-                        <div class="row m-1">
-                            <div class="col-12 bloque-inicio mt-2 pb-2">
-                                <span class="titulo">PROYECTOS</span><br>
-
-
-
-
-                                <iframe src="./pages/subpages/proyects.html"></iframe>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-6 col-lg-12 col-xl-8">
+                            <div class="blob_presentation">
+                                <div class="blob_cv_download">
+                                    <a class="blob_cv_download_button" href="#">Download CV</a>
+                                </div><br>
+                                <iframe class="blob_video"
+                                    src="https://www.youtube.com/embed/ocNMSXupkqQ?si=Dc62301EGvsNwCQB"
+                                    title="Clara Presentacion" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
 
-
-
-                    <div class="col-lg-4">
-                        <div class="row m-1">
-                            <div class="col-12 bloque-inicio pb-2">
-                                <span class="titulo ms-2 ">Menu</span><br>
-                                <div class="ms-2 futuristic-menu">
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link" href="#">Home</a>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link" href="./pages/proyects.html">Proyectos</a>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link" href="./pages/apps.html">Apps</a>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link" href="./pages/sobremi.html">Sobre Mi</a>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link" href="./pages/contacto.html">Contacto</a>
-                                    </div>
-                                    <div class="social-title">
-                                        <p>Social</p>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link" href="https://github.com/CBujeda">GitHub</a>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link futuristic-box"
-                                            href="https://www.youtube.com/@clarabujeda">Youtube</a>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link futuristic-box"
-                                            href="https://es.linkedin.com/in/clara-bujeda">Linkedin</a>
-                                    </div>
-                                    <div class="romboide-container">
-                                        <a class="futuristic-link futuristic-box" href="#">Instagram</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
+            <!--Seccion proyectos destacados-->
+
+            <div class="row ms-5 me-5 mt-5">
+                <div class="col-12">
+                    
+                    <div class="line_title_text mb-4"><span>Proyectos Destacados</span></div>
+                    <div class="proyectos">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-3">
+                                <div class=" proyecto">
+                                    <div class="header-text-proyect">NIB</div>
+                                    <a href="proyects.html">
+                                        <div class="content_proyect">
+                                            <img src="./assets/img/proyects/cover/slider_NIB.png">
+                                        </div>
+                                    </a>
+                                    <div class="buttons_proyect">
+                                        <button class="btn_proyect btn_view">Ver</button>
+                                        <button class="btn_proyect btn_play">Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------>
+                            <div class="col-sm-12 col-md-4 col-lg-3">
+                                <div class=" proyecto">
+                                    <div class="header-text-proyect">NIB</div>
+                                    <a href="proyects.html">
+                                        <div class="content_proyect">
+                                            <img src="./assets/img/proyects/cover/slider_NIB.png">
+                                        </div>
+                                    </a>
+                                    <div class="buttons_proyect">
+                                        <button class="btn_proyect btn_view">Ver</button>
+                                        <button class="btn_proyect btn_play">Play</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+
 
         </div>
 
+
+
+
+
+        <div class="footer">
+            <p>&copy; 2021 Clara Bujeda</p>
+        </div>
     </div>
-
-
 
 </html>
