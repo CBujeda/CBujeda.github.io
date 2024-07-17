@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Universidad de Zaragoza",
+        "start_date": "2023-09-12",
+        "description": "Este evento comienza en el futuro y no tiene fecha de finalización.",
+        "image": "unizar.png"
+      },
+    {
+      "title": "Salesianos Zaragoza",
+      "start_date": "2021-09-12",
+      "end_date": "2022-06-10",
+      "description": "Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)",
+      "image": "salesianos.jpeg"
+    }
+  ]
+  

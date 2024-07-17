@@ -1,0 +1,22 @@
+[
+    {
+      "imgSrc": "slider_NIB.png",
+      "title": "NIB",
+      "description": "Un ImageBoard para todos",
+      "large_description":"Un Image Board o tablón de imágenes llamado en español, es simplemente una aplicación web en la cual cualquier usuario puede publicar imágenes llamadas posts, asi como buscar diferentes imágenes como medio de inspiración.",   
+      "clase": "Servidor",
+      "time":"2023-6-18",
+      "link": "NIB/index.html"
+    },
+
+    {
+        "imgSrc": "slider_NIB.png",
+        "title": "NIB",
+        "description": "Un ImageBoard para todos",
+        "large_description":"Un Image Board o tablón de imágenes llamado en español, es simplemente una aplicación web en la cual cualquier usuario puede publicar imágenes llamadas posts, asi como buscar diferentes imágenes como medio de inspiración.",   
+        "clase": "Servidor",
+        "time":"2023-6-18",
+        "link": "#"
+      }
+  
+]
