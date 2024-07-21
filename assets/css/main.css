@@ -80,124 +80,6 @@ html,body,.container-fluid {
 
 
 /****************************************************/
-/****************** Social Box***********************/
-
-.social_box a div{
-    --size-social-box:30px;
-    height: var(--size-social-box);
-    width: var(--size-social-box);
-    background-color: var(--button-back-color);
-    margin: 5px;
-    float: right;
-    border-radius: 100%;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 1px;
-    -webkit-box-shadow: 2px 2px 0px 0px #ffffff; 
-        box-shadow: 2px 2px 0px 0px #ffffff;
-    overflow: hidden;
-}
-.social_box a div:hover{
-    margin-top: 2px;
-    /*
-    -webkit-box-shadow: 0px 0px 0px 0px #ffffff; 
-        box-shadow: 0px 0px 0px 0px #ffffff;
-*/
-}
-.social_box a div img{
-    user-select: none;
-}
-
-/****************************************************/
-/******************** Content ***********************/
-
-
-.about-me-box{
-    margin-top: var(--margin-content-top);
-    width: 100%;
-
-    background-color: var(--box-back-color);
-    border-color: var(--default-border-color);
-    border-style: solid;
-    border-width: 4px;
-    box-shadow: 12px 10px 0px 0px rgba(255,255,255,1);
-    -webkit-box-shadow: 12px 10px 0px 0px rgba(255,255,255,1);
-    -moz-box-shadow: 12px 10px 0px 0px rgba(255,255,255,1);
-    margin-bottom: 10px;
-    padding: 8px;
-}
-.about-me-box .title_box{
-    color: var(--title-box-color);
-    font-size: 1.5em;
-    font-weight: bold;
-    text-shadow: 2px 2px 0px rgb(255, 255, 255);
-}
-.about-me-box .text_box_basic{
-    color: var(--default-text);
-    font-weight: bold;
-}
-
-    /**BLOB PRESENTATION**/
-.blob_presentation{
-    margin-top: var(--margin-content-top);
-    text-align: center;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
-    background-color: var(--formas-back-color);
-    padding-bottom: 40px;
-    padding-top: 20px;
-    overflow: hidden; /* Oculta el contenido que se desborde del div */
-    animation: blob_respiracion 5s infinite alternate;
-    user-select: none;
-}
-.blob_presentation:hover{
-    overflow: visible;
-}
-
-@keyframes blob_respiracion {
-    0% {
-      transform: scale(1) rotate(0deg);
-    }
-    100% {
-      transform: scale(1.05) rotate(2deg);
-    }
-}
-
-
-.blob_video{
-    border-radius: 10px;
-    width: var(--video-size);
-    height: calc(var(--video-size)/2);
-    user-select: none;
-}
-.blob_cv_download_button{
-    background-color: var(--button-back-color);
-    color: var(--default-text);
-    text-decoration: none;
-    font-weight: bold;
-    border-color: #fff;
-    border-width: 1px;
-    border-style: solid;
-    padding: 3px;
-    border-radius: 5px;
-    -webkit-box-shadow: 3px 3px 0px 0px #ffffff; 
-        box-shadow: 3px 3px 0px 0px #ffffff;
-        user-select: none;
-}
-
-
-
-.blob_cv_download_button:hover{
-    margin-top: 6px;
-    margin-left: 6px;
-    -webkit-box-shadow: 0px 0px 0px 0px #ffffff; 
-    box-shadow: 0px 0px 0px 0px #ffffff;
-
-    background-color: #3A395E;
-    color: var(--default-text);
-    text-decoration: none;
-}
-
-/****************************************************/
 /******************* Secciones **********************/
 .line_title_text {
     display: flex;
@@ -226,4 +108,9 @@ html,body,.container-fluid {
 }
 
 
+/****************************************************/
+/******************* Footer **********************/
+.footer{
+    opacity: 90%;
+}
 /****************************************************/
