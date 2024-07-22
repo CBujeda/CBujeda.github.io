@@ -1,0 +1,14 @@
+:root{
+    --size-canvas:60px;
+    --background-main:#005205;
+}
+
+body,html{
+    background-color: var(--background-main);
+}
+
+canvas{
+    height: 500px;
+    width: 500px;
+    background-color: blueviolet;
+}
