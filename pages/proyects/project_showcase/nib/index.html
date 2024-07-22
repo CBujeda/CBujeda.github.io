@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clara Bujeda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/card.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/proyect_main.css">
+    <link rel="icon" type="image/x-icon" href="../../../../assets/favicons/favicon256I.ico">
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="navigator">
+            <!--NavBar-->
+            <div class="row mt-2">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-6 container_title">
+                    <div class="profile_image">
+                    </div>
+                    <span class="title_profile">Clara Bujeda</span>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-6 container_menu">
+                    <ul class="nav justify-content-end link_menu">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../../../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../../index.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../trayectory/index.html">Trayectoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../other/index.html">Videos</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="content mt-1">
+
+            <div class="row mt-5 ms-2 me-2">
+                <div class="col-sm-12 col-lg-4">
+                    <iframe class="video_yt" src="https://www.youtube.com/embed/7KrkzgEfUC0?si=eWfg8zxjkNFksOVt"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                    <span class="title">NIB - NINE IMAGE BOARD </span><a href="./docViewer.html"
+                        class="button">Documentacion</a>
+                    <div class="content-text">
+                        <span>
+                            Un Image Board o tablón de imágenes llamado en español, es simplemente una aplicación
+                            web en la cual cualquier usuario puede publicar imágenes llamadas posts, asi como buscar
+                            diferentes imágenes como medio de inspiración.<br>
+                            El primer tablón de imágenes llamado 2channel surgió en 1999, el cual sigue activo en la
+                            actualidad nombrado como 5ch. los últimos tableros de imágenes fueron creados sobre 2013 los
+                            cuales usualmente usan tecnologías como php que actualmente son inseguras y desfasadas, en
+                            este TFG se desea realizar un sistema de tablón de imágenes con el uso de tecnologías
+                            actuales<br>
+                            como por ejemplo SpringBoot y Angular para mejorar el rendimiento y seguridad de la
+                            aplicación<br>
+                            web. Además de lo anterior se pretende mejorar el aspecto visual usando frameworks debido a
+                            que usualmente los tableros de imágenes se constituyen con css básico.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ms-2 me-2">
+                <div class="col-sm-12 col-lg-4">
+                    <span class="sm-title">Requisitos tecnicos</span>
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="sm-title">Uso e Instalación</span>
+
+                            <div>
+                                <ul>
+                                    <li> En Windows</li>
+                                    <ul>
+                                        <li>Lanzador Grafico - APPSTART.exe - ☑️</li>
+                                        <li>Lanzador de Consola - Start Auto.bat - ☑️</li>
+                                    </ul>
+                                    <li>En Linux </li>
+                                    <ul>
+                                        <li>Inicio Automatico - <span class="pendiente">Pendiente</span></li>
+                                        <li>Inicio Manual - ☑️</li>
+                                    </ul>
+                                </ul>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="sm-title"> Configuración</span>
+                            <div>
+                                <ul> 
+                                    <li>
+                                        <span>config.properties</span>
+                                    </li>
+                                </ul>
+                                <div class="conf mt-2">
+                                    <pre>
+                                    # CONFIGURATION
+
+# Back Backend 
+NIB_B_Port = 3000
+NIB_B_ip = localhost
+NIB_B_user = root
+NIB_B_pass = root
+NIB_B_Version = 0.1.1-SNAPSHOT
+
+# Frontend
+NIB_F_Port = 8080
+NIB_F_ip = localhost
+
+# MySql
+MySql_Port = 3306
+MySql_ip = localhost
+MySql_user = root
+MySql_pass = root 
+MySql_bbdd = ninbooru
+
+# Personalize paths
+javaPath=C:\\Program Files\\Java\\jdk-17\\bin\\java.exe
+# ngPath=C:\\Users\\USUARIO\\AppData\\Roaming\\npm\\ng.cmd
+                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="footer ms-5 mt-5">
+            <p>&copy; 2021 Clara Bujeda</p>
+        </div>
+    </div>
+
+</html>
