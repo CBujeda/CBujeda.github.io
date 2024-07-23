@@ -9,7 +9,7 @@ Hola! Soy Clara, soy estudiante del grado de Ingenieria Informatica.
 
 ## Proyectos Destacados
 
-- **NIB:** Gestor de imagenes tipo image board. [Enlace a la web del proyecto](https://cbujeda.github.io/pages/proyects/project_showcase/nib/index.htmlUR)
+- **NIB:** Gestor de imagenes tipo image board. [Enlace a la web del proyecto](https://cbujeda.github.io/pages/proyects/project_showcase/nib/index.html)
 
 ## Tecnologías
 
@@ -23,8 +23,8 @@ Hola! Soy Clara, soy estudiante del grado de Ingenieria Informatica.
 
 Incluye tus enlaces de contacto, como LinkedIn, Twitter, correo electrónico, etc. También puedes agregar un enlace directo a tu GitHub.
 
-- LinkedIn: [Perfil de LinkedIn](https://www.linkedin.com/in/clara-bujeda/UR)
-- GitHub: [Perfil de GitHub](https://github.com/CBujedaUR)
+- LinkedIn: [Perfil de LinkedIn](https://www.linkedin.com/in/clara-bujeda/)
+- GitHub: [Perfil de GitHub](https://github.com/CBujeda)
 
 ## Cómo ver mi portfolio
 
