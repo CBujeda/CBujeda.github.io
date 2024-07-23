@@ -1,6 +1,5 @@
 # CBujeda
 
-# Portfolio de [Tu Nombre]
 
 Bienvenido/a a mi portfolio personal alojado en GitHub Pages. Aquí podrás encontrar una recopilación de mis proyectos y aprender más sobre mí.
 
