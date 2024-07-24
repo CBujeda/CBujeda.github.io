@@ -47,7 +47,7 @@ def generar_html(videos_data):
         video_card = f'''
         <div class="col-sm-12 col-md-4 col-lg-3 mt-5 video-card">
             <div class="card">
-                <img src="{cover_filename}" class="card-img-top" alt="Cover del video" style="cursor: pointer;" onclick="window.open('{video_link}', '_blank')">
+                <img src="{cover_filename}" id="{video_id}" class="card-img-top" alt="Cover del video" style="cursor: pointer;" onclick="window.open('{video_link}', '_blank')">
                 <div class="card-body">
                     <h5 class="card-title">{title}</h5>
                     <p class="card-text" style="display:none;">{description}</p>
