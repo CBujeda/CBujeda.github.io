@@ -28,3 +28,9 @@
     border-width: 0px;
     background-color: transparent;
 }
+
+.title_secction_videos{
+    font-size: 20px;
+    text-align: center;
+    color: var(--apartado-text-color);
+}
