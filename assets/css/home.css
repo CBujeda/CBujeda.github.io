@@ -50,6 +50,17 @@
     user-select: none;
 }
 
+
+.link_aboutme{
+    text-decoration: none;
+    color: var(--default-text);
+}
+.link_aboutme:hover{
+   /* font-size: 105%;*/
+   font-weight: 900;
+}
+
+
 /****************************************************/
 /******************** Content ***********************/
 
