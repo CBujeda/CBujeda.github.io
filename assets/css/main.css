@@ -112,5 +112,6 @@ html,body,.container-fluid {
 /******************* Footer **********************/
 .footer{
     opacity: 90%;
+    background-color: transparent;
 }
 /****************************************************/
