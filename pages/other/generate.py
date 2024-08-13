@@ -16,8 +16,8 @@ def obtener_datos_videos():
     return response.json()
 
 def guardar_json(videos_data):
-    with open('videos.json', 'w') as json_file:
-        json.dump(videos_data, json_file, indent=4)
+    with open('videos.json', 'w',encoding='utf-8') as json_file:
+        json.dump(videos_data, json_file, ensure_ascii=False, indent=4)
 
 def descargar_cover(url, filename):
     response = requests.get(url)
@@ -27,7 +27,7 @@ def descargar_cover(url, filename):
 
 def generar_html(videos_data):
     # Leer la plantilla HTML desde el archivo
-    with open('videos.templ.html', 'r') as template_file:
+    with open('videos.templ.html', 'r',encoding='utf-8') as template_file:
         html_template = template_file.read()
 
     # Generar el contenido de las tarjetas de video
@@ -37,7 +37,7 @@ def generar_html(videos_data):
         title = item['snippet']['title']
         description = item['snippet']['description']
         video_link = f'https://www.youtube.com/watch?v={video_id}'
-        cover_url = item['snippet']['thumbnails']['high']['url']
+        cover_url = item['snippet']['thumbnails']['medium']['url']
         cover_filename = f'covers/{video_id}.jpg'
 
         # Descargar la portada del video
@@ -61,7 +61,7 @@ def generar_html(videos_data):
     html_content = html_template.replace('{video_cards}', video_cards)
 
     # Escribir el HTML final en un archivo
-    with open('index.html', 'w') as html_file:
+    with open('index.html', 'w', encoding='utf-8') as html_file:
         html_file.write(html_content)
 
 def main():
