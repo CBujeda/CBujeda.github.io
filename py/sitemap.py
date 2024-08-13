@@ -2,7 +2,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
-import datetime
+from datetime import datetime, timezone
 from dotenv import load_dotenv
 
 # Cargar variables de entorno desde el archivo .env
@@ -22,9 +22,32 @@ def get_all_links(base_url):
         print(f"Error al acceder a {base_url}: {e}")
     return urls
 
+def determine_priority(url, base_url):
+    # Asignar prioridades según las reglas especificadas
+    if url == base_url:
+        return "1.0"  # Página principal o índice principal
+    elif 'category' in url or 'proyects' in url:
+        return "0.8"  # Páginas de categorías o productos destacados
+    elif 'blog' in url or 'news' in url:
+        return "0.6"  # Páginas de blog o noticias (contenido importante pero no crítico)
+    elif 'other' in url or 'trayectory' in url:
+        return "0.5"  # Páginas de contacto o sobre nosotros
+    elif 'terms' in url or 'info' in url:
+        return "0.3"  # Páginas de términos de servicio o políticas de privacidad
+    else:
+        return "0.4"  # Otras páginas menos cruciales
+
 def generate_sitemap(base_url, filename='../sitemap.xml'):
     urls = get_all_links(base_url)
-    timestamp = datetime.datetime.now().isoformat()
+    timestamp = datetime.now(timezone.utc).isoformat(timespec='seconds')
+    
+    url_data = []
+    for url in urls:
+        priority = determine_priority(url, base_url)
+        url_data.append((url, priority))
+    
+    # Ordenar las URLs por prioridad (de mayor a menor)
+    url_data.sort(key=lambda x: x[1], reverse=True)
     
     header = '<?xml version="1.0" encoding="UTF-8"?>\n'
     header += '<urlset\n'
@@ -34,11 +57,11 @@ def generate_sitemap(base_url, filename='../sitemap.xml'):
     header += '            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n\n'
     
     body = ''
-    for url in urls:
+    for url, priority in url_data:
         body += f'  <url>\n'
         body += f'    <loc>{url}</loc>\n'
         body += f'    <lastmod>{timestamp}</lastmod>\n'
-        body += f'    <priority>0.80</priority>\n'
+        body += f'    <priority>{priority}</priority>\n'
         body += f'  </url>\n'
     
     footer = '</urlset>'
