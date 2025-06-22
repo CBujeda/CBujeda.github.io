@@ -1,3 +1,2 @@
-
-pages/other/.env
-pages/other/videos.json
+node_modules
+older

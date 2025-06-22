@@ -7,17 +7,6 @@ Bienvenido/a a mi portfolio personal alojado en GitHub Pages. Aquí podrás enco
 
 Hola! Soy Clara, soy estudiante del grado de Ingenieria Informatica.
 
-## Proyectos Destacados
-
-- **NIB:** Gestor de imagenes tipo image board. [Enlace a la web del proyecto](https://cbujeda.github.io/pages/proyects/project_showcase/nib/index.html)
-
-## Tecnologías
-
-- HTML/CSS
-- JavaScript
-- Java
-- Python
-- etc.
 
 ## Contacto
 

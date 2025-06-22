@@ -1,0 +1,41 @@
+---
+layout: page/layout-page.njk
+title: INICIO
+description: Bienvenido a mi sitio web
+---
+
+<div style="height: 70px;"></div>
+
+<div class="container py-5">
+        <h1 class="text-center mb-5">Mi Trayectoria Profesional y Educativa</h1>
+
+        <div class="timeline-container">
+            {% for item in trayectoria.trayectory %}
+                {% set isLeft = loop.index0 % 2 == 0 %} {# Determina si es izquierda o derecha #}
+                <div class="timeline-item {% if isLeft %}left{% else %}right{% endif %} row">
+                    {# Columna para el contenido del elemento #}
+                    <div class="col-md-6 {% if isLeft %}offset-md-6{% else %}order-md-2{% endif %}">
+                        <div class="timeline-item-content {{ item.type }} rounded-lg p-4 mb-3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="/assets/img/trayectory/{{ item.image }}" alt="{{ item.title }}" class=" img-fluid ">
+
+                                </div>    
+                                <div class="col-9">
+                                    <h3>{{ item.title }}</h3>
+                                    <h4>{{ item.subtitle }}</h4>
+                                    <p class="date">{{ item.date | replace('Actualidad', 'Presente') }}{% if item.date.endsWith('Actualidad') %} (Actualmente){% endif %}</p>
+
+                                </div>    
+                            </div>
+                            {%if item.link_bool %}
+                                {% if item.link %}
+                                    <a href="/education/list/{{ item.link }}" class="btn btn-outline-light btn-sm mt-2 rounded-lg" target="_blank" rel="noopener noreferrer">Ver más</a>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>

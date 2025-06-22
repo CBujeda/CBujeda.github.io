@@ -1,0 +1,238 @@
+{
+    "proyectos": [
+        {
+            "id": "Yuki 2D",
+            "destacado": false,
+            "nombre": "YUKI 2D",
+            "descripcion": "Motor de videojuegos desarrollado en Java, enfocado en la creación de juegos 2D. Incluye herramientas para gestión de recursos, físicas básicas y renderizado.",
+            "imagen": "slider_yuki2D.jpg",
+            
+            "have_repository": true,
+            "repositorio": "https://github.com/CBujeda/YUKI2D",
+            
+            "have_web": false,
+            "web_name": "",
+
+            "fecha_inicio": "2023-01-15",
+            "fecha_fin": "2023-12-31",
+
+            "estado_color":"bg-primary",
+            "estado": "Pausado",
+
+            "tecnologias": [
+                {
+                    "nombre": "Java",
+                    "version": "17",
+                    "tipo": "Backend"
+                }
+            ],
+
+            "links":[   
+                {
+                    "nombre": "Muestreo",
+                    "url": "https://www.youtube.com/watch?v=ocNMSXupkqQ"
+                }
+            ]
+        },
+        {
+            "id": "nib",
+            "destacado": true,
+            "nombre": "Nine Image Board (NIB)",
+            "descripcion": "Un Image Board o tablón de imágenes llamado en español, es simplemente una aplicación web en la cual cualquier usuario puede publicar imágenes llamadas posts, asi como buscar diferentes imágenes como medio de inspiración.",
+            "imagen": "slider_NIB.png",
+            
+            "have_repository": true,
+            "repositorio": "https://github.com/CBujeda/TFG-PROYECT-Nine_Image_Board",
+            
+            "have_web": true,
+            "web_name": "nib",
+
+            "fecha_inicio": "2023-01-15",
+            "fecha_fin": "2023-12-31",
+
+            "estado_color":"bg-dark",
+            "estado": "Finalizado",
+
+            "tecnologias": [
+                {
+                    "nombre": "Java",
+                    "version": "17",
+                    "tipo": "Backend"
+                },
+                {
+                    "nombre": "MySql",
+                    "version": "8",
+                    "tipo": "Base de datos"
+                },
+                {
+                    "nombre": "Node.js",
+                    "version": "v18.12.0",
+                    "tipo": "Backend"
+                },{
+                    "nombre": "Angular",
+                    "version": "v18.12.0",
+                    "tipo": "Frontend"
+                },
+                {
+                    "nombre": "npm",
+                    "version": "v8.19.2",
+                    "tipo": "Package manager"
+                }
+            ],
+
+            "links":[   
+            ]
+        },{
+            "id": "JP Dict",
+            "destacado": false,
+            "nombre": "JP Dict",
+            "descripcion": "Diccionario Japonés con funcionalidades de búsqueda, almacenamiento de favoritos, etc..",
+            "imagen": "slider_JPDict.jpg",
+            
+            "have_repository": false,
+            "repositorio": "",
+            
+            "have_web": false,
+            "web_name": "",
+
+            "fecha_inicio": "2023-01-15",
+            "fecha_fin": "2023-12-31",
+
+            "estado_color":"bg-dark",
+            "estado": "Finalizado",
+
+            "tecnologias": [
+                {
+                    "nombre": "Node.js",
+                    "version": "-",
+                    "tipo": "Backend"
+                },{
+                    "nombre": "React Native",
+                    "version": "-",
+                    "tipo": "Frontend"
+                }
+            ],
+
+            "links":[   
+                {
+                    "nombre": "Muestreo",
+                    "url": "https://www.youtube.com/watch?v=vKhMiRr1Lro"
+                }
+            ]
+        },{
+            "id": "Slither.io en Ensamblador",
+            "destacado": false,
+            "nombre": "Slither.io en Ensamblador (ARM)",
+            "descripcion": "Proyecto universitario de un clon del juego slither.io, desarrollado en ensamblador para la arquitectura ARM. El objetivo es aprender sobre programación a bajo nivel y el manejo de memoria.",
+            "imagen": "solider_slitherio_arm.jpg",
+            
+            "have_repository": false,
+            "repositorio": "",
+            
+            "have_web": false,
+            "web_name": "",
+
+            "fecha_inicio": "2023-01-15",
+            "fecha_fin": "2023-12-31",
+
+            "estado_color":"bg-dark",
+            "estado": "Finalizado",
+
+            "tecnologias": [
+                {
+                    "nombre": "Ensamblador",
+                    "version": "-",
+                    "tipo": "Bajo nivel"
+                }
+            ],
+
+            "links":[   
+                {
+                    "nombre": "Muestreo",
+                    "url": "https://www.youtube.com/watch?v=EgmCWh5WVdk"
+                }
+            ]
+        },{
+            "id": "Colon Minecraft JS",
+            "destacado": false,
+            "nombre": "MINICUBE JS",
+            "descripcion": "Un simple experimento de un clon de minecraft con three.js, con el objetivo de aprender.",
+            "imagen": "slider_minicube.png",
+            
+            "have_repository": false,
+            "repositorio": "",
+            
+            "have_web": false,
+            "web_name": "",
+
+            "fecha_inicio": "2023-01-15",
+            "fecha_fin": "2023-12-31",
+
+            "estado_color":"bg-dark",
+            "estado": "Finalizado",
+
+            "tecnologias": [
+                {
+                    "nombre": "Node.js",
+                    "version": "-",
+                    "tipo": "Backend"
+                },{
+                    "nombre": "Three.js",
+                    "version": "-",
+                    "tipo": "Backend"
+                }
+            ],
+
+            "links":[   
+                {
+                    "nombre": "Muestreo",
+                    "url": "https://www.youtube.com/watch?v=f2GptZfbSmY"
+                }
+            ]
+        },{
+            "id": "MIPS",
+            "destacado": false,
+            "nombre": "PROYECTO MIPS",
+            "descripcion": "Desarrollo parcial de un procesador MIPS en VHDL, con el objetivo de aprender sobre arquitectura de computadoras y diseño digital.",
+            "imagen": "slider_mips.webp",
+            
+            "have_repository": false,
+            "repositorio": "",
+            
+            "have_web": false,
+            "web_name": "",
+
+            "fecha_inicio": "2023-01-15",
+            "fecha_fin": "2023-12-31",
+
+            "estado_color":"bg-dark",
+            "estado": "Finalizado",
+
+            "tecnologias": [
+                {
+                    "nombre": "VHDL",
+                    "version": "-",
+                    "tipo": "Backend"
+                }
+            ],
+
+            "links":[   
+                
+            ]
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    ]
+
+}

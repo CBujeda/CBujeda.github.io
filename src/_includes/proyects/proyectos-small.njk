@@ -1,0 +1,36 @@
+{% for proyecto in proyectosList.proyectos | reverse %}
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="card h-100 shadow-sm rounded-4 project-card p-2" style="font-size: 0.92rem; min-width: 180px; max-width: 260px;">
+            <div class="position-relative">
+                <img src="/assets/img/proyectos/covers/{{proyecto.imagen}}" class="card-img-top rounded-top" alt="Proyecto 1" style="height:120px; object-fit:cover;">
+                {% if proyecto.destacado %}
+                    <span class="position-absolute top-0 end-0 m-1" style="font-size: 1.3em; z-index: 2; text-shadow: 1px 1px 4px #333, 0 0 6px #fff;">⭐</span>
+                {% endif %}
+                <span class="position-absolute bottom-0 start-0 m-1 px-2 py-1 {{ proyecto.estado_color }} text-white rounded small" style="opacity: 0.85; font-size: 0.75em;">
+                    {{ proyecto.estado }}
+                </span>
+            </div>
+            <div class="card-body d-flex flex-column py-2 px-2">  
+                <h6 class="card-title mb-1"><b>{{ proyecto.nombre }}</b></h6>
+                <p class="card-text mb-2" style="font-size:0.88em;">{{ proyecto.descripcion | truncate(100, true, '...') }}</p>
+                <div class="mt-auto">
+                    {% for tecnologia in proyecto.tecnologias %}
+                        <span class="badge bg-secondary me-1 mb-1" style="font-size:0.75em;">{{ tecnologia.nombre }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="card-footer bg-white border-0 py-2 px-2">
+                {% if proyecto.have_repository %}
+                    <a href="{{proyecto.repositorio}}" class="btn btn-outline-primary btn-sm me-1 rounded-pill" style="font-size:0.8em; padding:2px 8px;"><i class="fab fa-github me-1"></i>GitHub</a>
+                {% endif %}
+                {% if proyecto.have_web %}
+                    <a href="/projects/list/{{proyecto.web_name}}" class="btn btn-outline-dark btn-sm rounded-pill" style="font-size:0.8em; padding:2px 8px;"><i class="fas fa-external-link-alt me-1"></i>Ver</a>
+                {% endif %}
+
+                {%for link in proyecto.links%}
+                <a href="{{link.url}}" class="btn btn-outline-dark btn-sm rounded-pill" style="font-size:0.8em; padding:2px 8px;"><i class="fas fa-external-link-alt me-1"></i>{{link.nombre}}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endfor %}

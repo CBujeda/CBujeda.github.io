@@ -1,0 +1,30 @@
+{
+  "name": "cbujeda.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "install": "npm install @11ty/eleventy --save-dev",
+    "start": "npx @11ty/eleventy --serve --port=3000",
+    "clean":"rm -rf public/*",
+    "deploy":"npx @11ty/eleventy --pathprefix=/",
+    "deploy_-subdomain":"npx @11ty/eleventy --pathprefix=/"
+
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CBujeda/CBujeda.github.io.git"
+  },
+  "keywords": [],
+  "author": "Clara Bujeda Muñoz",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/CBujeda/CBujeda.github.io/issues"
+  },
+  "homepage": "https://github.com/CBujeda/CBujeda.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.1"
+  }
+}

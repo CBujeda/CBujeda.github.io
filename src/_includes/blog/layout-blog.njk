@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    <link rel="icon" href="/assets/img/favicon/favicon256I.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/pages/page_styles.css">
+</head>
+<body>
+    {% include "page/menu.njk" %}
+    <div class="container mt-5 pt-5">
+        <div class="row ">
+            
+            <div class="col-10 box_white_simple p-2">
+                
+                <main>
+                    {{content | safe}}
+                </main>
+                
+            </div>
+            <div class="col-2 box_white_simple p-2">
+                <h2 class="text-center">Categorias</h2>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    {% include "footer.njk" %}
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: #222;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.texto_shadower {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 1px 0 #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.box_white {
+    background-color: #fff;
+    color: #222;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+/**
+Uso principal en blog
+*/
+.box_white_simple {
+    background-color: #fff;
+    color: #222;
+    border-radius: 0.1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+
+}
+
+.box_white:hover, .box_white:focus-within {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #6a82fb;
+    text-shadow: 0 2px 8px rgba(106,130,251,0.08);
+    letter-spacing: 1px;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px rgba(106,130,251,0.08);
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 32px rgba(106,130,251,0.16);
+}
+
+
+a[href="#sobre-mi"] svg {
+  width: 50px;
+  height: 50px;
+  transition: width 0.3s, height 0.3s;
+}
+
+a[href="#sobre-mi"]:hover svg {
+  width: 70px;
+  height: 70px;
+}
+
+
+.social-link {
+    transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+    box-shadow: none;
+}
+.social-link:hover, .social-link:focus {
+    transform: translateY(-6px) scale(1.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 1;
+}   
+.social-icon {
+    transition: filter 0.2s, transform 0.2s;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    filter: brightness(1.2) drop-shadow(0 0 6px #fff3);
+    transform: scale(1.12) rotate(-6deg);
+}

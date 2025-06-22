@@ -1,0 +1,88 @@
+{
+    "trayectory":[
+        {
+            "type": "school",
+            "title": "Universidad de Zaragoza",
+            "subtitle": "Grado Universitario en Ingeniería Informática",
+            "date": "2023-Actualidad",
+            "image": "unizar.png",
+            "link_bool": false,
+            "link": "#"
+        },
+        {
+            "type": "challenge",
+            "title": "Spain Skills 2024",
+            "subtitle": "Finalista Nacional",
+            "date": "2024",
+            "image": "spainskills.png",
+            "link_bool": false,
+            "link": "#"
+        },
+        {
+            "type": "company",
+            "title": "DXC Technology",
+            "subtitle": "Prácticas en empresa",
+            "date": "2023",
+            "image": "dxc.png",
+            "link_bool": false,
+            "link": "#"
+        },
+        {
+            "type": "challenge",
+            "title": "Aragón Skills 2023",
+            "subtitle": "Medalla de Oro (Desarrollo Web)",
+            "date": "2023",
+            "image": "aragonskills.png",
+            "link_bool": true,
+            "link": "aragon-skills"
+            
+        },
+        {
+            "type": "challenge",
+            "title": "NASA International Space Apps Challenge",
+            "subtitle": "Participante (Desarrollo de Soluciones)",
+            "date": "2023",
+            "image": "nasa-international-space-apps.png",
+            "link_bool": false,
+            "link": "#"
+        },
+        {
+            "type": "school",
+            "title": "Salesianos Zaragoza",
+            "subtitle": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)",
+            "date": "2021-2023",
+            "image": "salesianos.png",
+            "link_bool": false,
+            "link": "#"
+        },
+        {
+            "type": "company",
+            "title": "Futurver Zaragoza",
+            "subtitle": "Prácticas en Empresa (Desarrolladora Web)",
+            "date": "2022",
+            "image": "futurver.png",
+            "link_bool": false,
+            "link": "#"
+        },
+        {
+            "type": "school",
+            "title": "I.E.S Pablo Serrano",
+            "subtitle": "Grado Medio Sistemas Microinformáticos y Redes (SMR)",
+            "date": "2019-2021",
+            "image": "pablo-serrano.png",
+            "link_bool": false,
+            "link": "#"
+        },
+        {
+            "type": "school",
+            "title": "Centro San Valero",
+            "subtitle": "Educación Secundaria Obligatoria (ESO)",
+            "date": "2015-2019",
+            "image": "sanvalero.png",
+
+            "link_bool": false,
+            "link": "#"
+        }
+        ]
+
+}

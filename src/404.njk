@@ -1,0 +1,26 @@
+---
+layout: page/layout-page.njk
+title: INICIO
+description: Bienvenido a mi sitio web
+---
+
+<script>
+    window.onload = function() {
+        window.location.hash = "#footer";
+    };
+</script>
+<div class="min-vh-100 d-flex flex-column">
+        <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                <div class="container d-flex justify-content-center">
+                        <div class="card p-5 text-center bg-white shadow-lg rounded-3 col-12 col-md-8 col-lg-6 my-4">
+                                <div class="display-1 fw-bold text-danger mb-2">404</div>
+                                <h1 class="fs-2 text-dark mb-3">¡Ups! Parece que esta página se ha tomado unas vacaciones. 🏖️</h1>
+                                <p class="fs-5 text-secondary mb-4">
+                                        No pudimos encontrar lo que buscas. ¡Quizás se fue a tomar un café o a explorar el espacio exterior! 🚀
+                                        Mientras tanto, ¿por qué no vuelves a un lugar seguro?
+                                </p>
+                                <a href="/" class="btn btn-primary btn-lg rounded-pill shadow">Volver a la Tierra (o al inicio)</a>
+                        </div>
+                </div>
+        </div>
+</div>

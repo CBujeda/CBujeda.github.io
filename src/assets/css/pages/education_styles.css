@@ -1,0 +1,141 @@
+/* Estilos personalizados para la línea de tiempo */
+body {
+    font-family: "Inter", sans-serif; /* Usa la fuente Inter */
+    background-color: #f8f9fa; /* Un fondo claro para la página */
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 960px; /* Ancho máximo para el contenedor de la línea de tiempo */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Línea vertical central */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 4px; /* Grosor de la línea */
+    background-color: #dee2e6; /* Color de la línea (Bootstrap light gray) */
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Centrar la línea verticalmente */
+    margin-left: -2px; /* Ajuste para centrar el grosor */
+}
+
+.timeline-item {
+    padding: 10px 0; /* Espaciado interno para cada elemento */
+    position: relative;
+}
+
+.timeline-item-content {
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative; /* Necesario para el indicador de punto */
+}
+
+/* Colores de fondo específicos para cada tipo */
+.timeline-item-content.school {
+    background-color: #3a387e; /* Azul de Bootstrap */
+    color: #ffffff; /* Texto blanco para contraste */
+
+        /*trayectory colors*/
+}
+
+.timeline-item-content.challenge {
+    background-color: #8e3357; /* Rojo oscuro de Bootstrap */
+    color: #ffffff;
+}
+
+.timeline-item-content.company {
+    background-color: #347752; /* Verde oscuro de Bootstrap */
+    color: #ffffff;
+}
+
+/* Puntos en la línea de tiempo */
+/**
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px; /* Tamaño del punto *
+    height: 16px;
+    background-color: #6c757d; /* Color del punto (Bootstrap gray) *
+    border: 3px solid #ffffff; /* Borde blanco alrededor del punto *
+    top: 50%; /* Alinear al centro vertical de la caja *
+    transform: translateY(-50%); /* Ajustar para centrar el punto *
+    border-radius: 50%; /* Hacerlo circular *
+    z-index: 1; /* Asegurar que esté por encima de la línea *
+}
+/*
+/* Ajuste de los puntos para elementos a la izquierda */
+.timeline-item.left::after {
+    right: -8px; /* Posicionar a la derecha de la línea */
+}
+
+/* Ajuste de los puntos para elementos a la derecha */
+.timeline-item.right::after {
+    left: -8px; /* Posicionar a la izquierda de la línea */
+}
+
+/* Estilos para el título y subtítulo */
+.timeline-item-content h3 {
+    font-size: 1.5rem; /* Tamaño de fuente para el título */
+    margin-bottom: 5px;
+}
+
+.timeline-item-content h4 {
+    font-size: 1.1rem; /* Tamaño de fuente para el subtítulo */
+    margin-bottom: 10px;
+    opacity: 0.9; /* Ligeramente más transparente */
+}
+
+.timeline-item-content p {
+    font-size: 0.95rem; /* Tamaño de fuente para la descripción */
+    margin-bottom: 5px;
+}
+
+.timeline-item-content .date {
+    font-size: 0.85rem; /* Tamaño de fuente para la fecha */
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 0.8; /* Ligeramente más transparente */
+}
+
+.timeline-item-image {
+    max-width: 80px; /* Ancho máximo de la imagen */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 767px) {
+    .timeline-container::before {
+        left: 20px; /* Mueve la línea a la izquierda en pantallas pequeñas */
+    }
+
+    .timeline-item {
+        padding-left: 50px; /* Espaciado para el contenido */
+    }
+
+    .timeline-item::after {
+        left: 12px; /* Mueve los puntos a la izquierda */
+        margin-left: 0;
+    }
+
+    .timeline-item.left .timeline-item-content,
+    .timeline-item.right .timeline-item-content {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; /* El contenido ocupa todo el ancho disponible */
+    }
+
+    .timeline-item.left::after,
+    .timeline-item.right::after {
+        left: 12px; /* Alinea todos los puntos a la izquierda */
+        right: auto;
+    }
+}
