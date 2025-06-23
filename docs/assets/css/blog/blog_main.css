@@ -1,0 +1,84 @@
+/* Estilos para la sección de cabecera (jumbotron) */
+.header-section {
+    background: url('/assets/img/background/space.png') center center / cover no-repeat;
+    color: #ffffff; /* Texto blanco */
+    padding: 60px 0; /* Más padding para impacto */
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+}
+.header-section h1 {
+    font-size: 3.5rem; /* Tamaño de fuente grande para el título */
+    font-weight: 800; /* Extra negrita */
+    margin-bottom: 15px;
+}
+.header-section p {
+    font-size: 1.2rem;
+    opacity: 0.9; /* Ligeramente transparente */
+}
+
+/* Estilos para las entradas de blog */
+.blog-post {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas de blog */
+    padding: 30px; /* Más padding */
+    margin-bottom: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Sombra mejorada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para hover */
+}
+.blog-post:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Sombra más grande al pasar el ratón */
+}
+.blog-post h2 {
+    color: #ff6600; /* Título naranja vibrante */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.blog-post .meta {
+    color: #6c757d; /* Color gris para la meta información */
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    display: block; /* Asegura que ocupe su propia línea */
+}
+.blog-post .read-more {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.blog-post .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la barra lateral (sidebar) */
+.sidebar-section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+.sidebar-section h4 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #e9ecef; /* Separador */
+    padding-bottom: 10px;
+}
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-section ul li {
+    margin-bottom: 10px;
+}
+.sidebar-section ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+.sidebar-section ul li a:hover {
+    text-decoration: underline;
+}
+

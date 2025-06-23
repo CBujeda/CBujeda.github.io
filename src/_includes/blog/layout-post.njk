@@ -1,0 +1,36 @@
+---
+layout: blog/layout-blog.njk
+title: Clara Bujeda Muñoz - INICIO
+description: Bienvenido a mi sitio web
+---
+
+
+
+<nav class="navbar navbar-light bg-light mb-3 rounded shadow-sm px-3 py-2">
+    <a class="btn btn-outline-primary fw-bold" href="/blog/">
+        ← Volver al blog
+    </a>
+</nav>
+
+<link rel="stylesheet" href="/assets/css/blog/posts_md.css">
+<link rel="stylesheet" href="/assets/css/highlight.css">
+<script src="/assets/js/highlight/highlight.min.js"></script>
+
+<div class="container box_white_simple" style="min-height: 90vh;">
+    <div class="row h-100">
+        <div class="col h-100 d-flex flex-column">
+            <main class="flex-grow-1 markdown">
+                {{content | safe}}
+            </main>
+        </div>
+    </div>
+</div>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="/assets/js/highlight/cpp.min.js"></script>
+<script src="/assets/js/highlight/java.min.js"></script>
+<script src="/assets/js/highlight/markdown.min.js"></script>
+<script src="/assets/js/highlight/css.min.js"></script>
+<script src="/assets/js/highlight/bash.min.js"></script>
+
+<script>hljs.highlightAll();</script>

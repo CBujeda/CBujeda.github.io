@@ -1,0 +1,25 @@
+{
+  "title": "Mi Blog Eleventy",
+  "description": "Explora artículos interesantes, tutoriales y reflexiones sobre diversos temas.",
+  "author": {
+    "name": "Clara Bujeda",
+    "url": "https://tu-web-personal.com"
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "#",
+      "icon": "fab fa-twitter"
+    },
+    {
+      "name": "Facebook",
+      "url": "#",
+      "icon": "fab fa-facebook"
+    },
+    {
+      "name": "Instagram",
+      "url": "#",
+      "icon": "fab fa-instagram"
+    }
+  ]
+}

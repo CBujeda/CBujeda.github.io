@@ -8,23 +8,28 @@
     <link rel="icon" href="/assets/img/favicon/favicon256I.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/pages/page_styles.css">
+    <link rel="stylesheet" href="/assets/css/blog/blog_main.css">
+
 </head>
 <body>
     {% include "page/menu.njk" %}
     <div class="container mt-5 pt-5">
         <div class="row ">
+            <div class="col-12">
+                <!-- Sección de Cabecera (Jumbotron) -->
+                <header class="header-section">
+                    <h1>Bienvenid@ a Mi Blog</h1>
+                    <p>Explora artículos interesantes, tutoriales y reflexiones sobre diversos temas.</p>
+                </header>
+            </div>    
             
-            <div class="col-10 box_white_simple p-2">
-                
-                <main>
-                    {{content | safe}}
-                </main>
-                
-            </div>
-            <div class="col-2 box_white_simple p-2">
-                <h2 class="text-center">Categorias</h2>
-            </div>
         </div>
+        <main class="mt-5">
+            {{content | safe}}
+        </main>
+
+
+
     </div>
     
     <script src="/assets/js/bootstrap.bundle.min.js"></script>

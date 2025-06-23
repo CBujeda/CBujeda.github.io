@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Utils</title>
+    <meta name="description" content="Resumen de los comandos mas importantes de docker así como diversos ejemplos">
+    <link rel="icon" href="/assets/img/favicon/favicon256I.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/pages/page_styles.css">
+    <link rel="stylesheet" href="/assets/css/blog/blog_main.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+       
+        Clara Bujeda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/projects">Proyectos</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="/education">Portafolio</a>
+        </li>
+        
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="/blog">Blog</a>
+        </li>
+        <!--
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="/learn">Aprender</a>
+        </li>-->
+
+
+
+      </ul>
+      
+      <!-- UTILS -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/img/icon/translate.svg" alt="Idioma" width="24" height="24" class="d-inline-block align-text-top" style="filter: invert(1) brightness(2);">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <!-- IDIOMA ESPAÑOL -->
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="/assets/img/icon/flags/es.svg" alt="Español" width="24" height="24" class="d-inline-block align-text-top">
+                Español
+              </a>
+            </li>
+
+            <!-- IDIOMA INGLES -->
+            <!--
+            <li>
+              <a class="dropdown-item" href="/en/">
+                <img src="/assets/img/icon/flags/gb.svg" alt="Español" width="24" height="24" class="d-inline-block align-text-top">
+                
+                English
+              </a>
+            </li>
+            -->
+
+            
+          </ul>
+        </li>
+      </ul>
+      <!--
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container mt-5 pt-5">
+        <div class="row ">
+            <div class="col-12">
+                <!-- Sección de Cabecera (Jumbotron) -->
+                <header class="header-section">
+                    <h1>Bienvenid@ a Mi Blog</h1>
+                    <p>Explora artículos interesantes, tutoriales y reflexiones sobre diversos temas.</p>
+                </header>
+            </div>    
+            
+        </div>
+        <main class="mt-5">
+            
+
+
+<nav class="navbar navbar-light bg-light mb-3 rounded shadow-sm px-3 py-2">
+    <a class="btn btn-outline-primary fw-bold" href="/blog/">
+        ← Volver al blog
+    </a>
+</nav>
+
+<link rel="stylesheet" href="/assets/css/blog/posts_md.css">
+<link rel="stylesheet" href="/assets/css/highlight.css">
+<script src="/assets/js/highlight/highlight.min.js"></script>
+
+<div class="container box_white_simple" style="min-height: 90vh;">
+    <div class="row h-100">
+        <div class="col h-100 d-flex flex-column">
+            <main class="flex-grow-1 markdown">
+                <h1>UTIL DE DOCKER</h1>
+<h3>Comandos y estructuras útiles de Docker</h3>
+<pre><code class="language-bash">-- IMAGENES --
+
+docker images               -Lista todas las imagenes descargadas
+docker pull node            -Descargara la imagen de docker de node
+docker pull node:18         -Descargara la imagen de node en la version 18
+            mysql
+            mongo
+docker image rm node:18     -Eliminar una imagen
+
+
+-- CONTENEDORES --
+
+docker create mongo                     - Crear contenedor
+docker start `ID DEL CONTENEDOR`        - Iniciar contenedor
+docker ps                               - Mostrar los contenedores que estan corriendo
+docker stop  `ID DEL CONTENEDOR`        - Detiene un contenedor
+docker ps -a                            - Mostrar todos los contenedores creados
+docker rm   `ID DEL CONTENEDOR`         - Eliminar un contenedor
+
+                                        NOTA: Podemos usar el nombre del contenedor en vez del id de este
+
+docker create --name mongito mongo      - Crear un contenedor con nombre personalizado
+
+                HOST   DOKER
+docker create -p27018:27017 --name mongito mongo    -- [USUAL] Indicamos puerto de la maquina (Para que podamos usarlo)
+
+docker logs mongito                     - Ver los logs de un container
+docker logs --follow  mongito           - Ver los logs de forma constante
+
+
+-------------------------------DOCKER RUN ---------- descarga imagen, crea contenedor y lo inicia
+
+docker run mongo            - Inicia como si fuera una shell
+docker run -d mongo         - Inicia en segundo plano 
+docker run --name mongito -p27018:27017 -d mongo 
+
+
+------------------------------DOCKER NETWORK ----------------------------
+docker network ls               - Lista redes de docker
+docker network create mired     - Crer red
+docker network rm mired         - Eliminar red
+
+-----------------------------DOCKER FILE--------------------------------
+Dockerfile
+COMANDOS
+
+docker build -t miapp:1 .       -Para crear una imagen de un proyecto docker
+
+
+    EJEMPLO DE ARCHIVO:
+            FROM node:18
+            RUN mkdir -p /home/app
+            COPY . /home/app
+            EXPOSE 3000
+            CMD [&quot;node&quot;,&quot;/home/app/index.js&quot;]
+
+----------------------------DOCKER COMPOSE-----------------------------
+docker-compose.yml
+
+EJEMPLO ARCHIVO:
+version: &quot;3.9&quot;
+services:
+  appnode:
+    build: .
+    ports:
+      - &quot;3000:3000&quot;
+    links:
+      - mysql_pink
+  mysql_pink:
+    image: mysql
+    ports:
+      - &quot;3307:3306&quot;
+      - &quot;33061:33060&quot;
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+
+COMANDOS
+docker compose up           - Generar containers y runnerar
+docker compose down         - Elimina todo lo que creo
+docker compose -f docker-compose-dev.yml up
+----------------------------------------------------------
+</code></pre>
+<h3>EJEMPLOS</h3>
+<pre><code class="language-bash">----MYSQL----
+docker create -p3307:3306 -p33061:33060 --name mysql_pink -e MYSQL_ROOT_PASSWORD=root mysql
+
+docker run -p3307:3306 -p33061:33060 --name mysql_pink -e MYSQL_ROOT_PASSWORD=root mysql
+
+
+--------------------------------EJEMPLO DEPROYCETO----------------------
+
+docker create -p3307:3306 -p33061:33060 --name mysql_pink --network mired -e MYSQL_ROOT_PASSWORD=root mysql
+docker create -p3000:3000 --name appnode --network mired miapp:1
+</code></pre>
+
+            </main>
+        </div>
+    </div>
+</div>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="/assets/js/highlight/cpp.min.js"></script>
+<script src="/assets/js/highlight/java.min.js"></script>
+<script src="/assets/js/highlight/markdown.min.js"></script>
+<script src="/assets/js/highlight/css.min.js"></script>
+<script src="/assets/js/highlight/bash.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+        </main>
+
+
+
+    </div>
+    
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer bg-dark text-white py-4 mt-5" id="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0">&copy; Clara Bujeda Muñoz. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline mb-0 text-center text-md-end">
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0);" onclick="copyFooterEmail()" class="text-white text-decoration-none">
+                            <i class="bi bi-envelope"></i> Email
+                        </a>
+                    </li>
+                    <span id="footerCopySuccess" class="position-fixed top-50 start-50 translate-middle p-2 bg-success text-white rounded shadow"
+                        style="display:none; z-index:1050; transition: opacity 0.5s;">¡Copiado!</span>
+                    <script>
+                        function copyFooterEmail() {
+                            navigator.clipboard.writeText('clarabujedamunoz@gmail.com').then(function() {
+                                const successMsg = document.getElementById('footerCopySuccess');
+                                successMsg.style.display = 'inline';
+                                successMsg.style.opacity = 1;
+                                setTimeout(() => {
+                                    successMsg.style.opacity = 0;
+                                    setTimeout(() => {
+                                        successMsg.style.display = 'none';
+                                    }, 500);
+                                }, 1200);
+                            });
+                        }
+                    </script>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/clara-bujeda/" target="_blank" class="text-white text-decoration-none">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/CBujeda" target="_blank" class="text-white text-decoration-none">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
