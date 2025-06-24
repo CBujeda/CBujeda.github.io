@@ -82,3 +82,16 @@
     text-decoration: underline;
 }
 
+.markdown_title {
+    color: #ff6600; /* Título naranja vibrante */
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 2rem; /* Tamaño similar a h1 */
+    background: linear-gradient(90deg, #fff3e0 0%, #ffe0b2 100%);
+    padding: 8px 18px;
+    border-radius: 6px;
+    display: block; /* Ocupa todo el ancho */
+    width: 100%;    /* Asegura el ancho completo */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Sombra para el texto */
+}

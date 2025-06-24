@@ -1,6 +1,5 @@
 ---
 layout: blog/layout-blog.njk
-title: Clara Bujeda Muñoz - INICIO
 description: Bienvenido a mi sitio web
 ---
 
@@ -20,6 +19,7 @@ description: Bienvenido a mi sitio web
     <div class="row h-100">
         <div class="col h-100 d-flex flex-column">
             <main class="flex-grow-1 markdown">
+                <p class="mb-2 mt-2 markdown_title">{{title}}</p>
                 {{content | safe}}
             </main>
         </div>
