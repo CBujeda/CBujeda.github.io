@@ -1,11 +1,4 @@
 {
-    "nombre": "Clara Bujeda",
-    "tabla":[
-        {
-            "text": "Hola 1"
-        },
-        {
-            "texto2":"Hola2"
-        }
-    ]
+    "title": "CBujeda",
+    "languages": ["es", "en", "jp"]
 }
