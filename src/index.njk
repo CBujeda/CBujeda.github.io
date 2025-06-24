@@ -2,6 +2,15 @@
 layout: page/layout-page.njk
 title: Clara Bujeda Muñoz - INICIO
 description: Bienvenido a mi sitio web
+pagination:
+  data: site.languages
+  alias: lang
+  size: 1      
+  addAllPagesToCollections: true
+permalink: "{{ '/' + lang if lang != 'es' else '' }}/index.html"
+eleventyComputed:
+  lang: "{{ lang }}"
+  title: "{{ translations[lang].home }}"
 ---
 
 
@@ -12,10 +21,10 @@ description: Bienvenido a mi sitio web
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                        <h1 class="display-4 fw-bold text-light">Hola, soy Clara Bujeda Muñoz</h1>
-                        <p class="lead">Una estudiante de Ingeniería Informática apasionada por el desarrollo de software, la inteligencia artificial y la resolución de problemas complejos.</p>
-                        <a href="#proyectos" class="btn btn-primary btn-lg mt-3 me-2 rounded-pill">Ver Destacados</a>
-                        <a href="#contacto" class="btn btn-outline-secondary btn-lg mt-3 rounded-pill">Contactar</a>
+                        <h1 class="display-4 fw-bold text-light">{{ translations[lang].inicio_sec1_title1 }}</h1>
+                        <p class="lead">{{ translations[lang].inicio_sec1_desc }}</p>
+                        <a href="#proyectos" class="btn btn-primary btn-lg mt-3 me-2 rounded-pill">{{ translations[lang].inicio_sec1_btn_verDestacados }}</a>
+                        <a href="#contacto" class="btn btn-outline-secondary btn-lg mt-3 rounded-pill">{{ translations[lang].inicio_sec1_btn_Contactar }}</a>
 
                         <div>
                             <a href="#sobre-mi">
@@ -35,7 +44,7 @@ description: Bienvenido a mi sitio web
 <div class="box_white" >
     <div class="row">
         <div class="col-12 text-center">
-            <h2><b>Sobre Mi</b></h2>
+            <h2><b>{{ translations[lang].about_me }}</b></h2>
         </div>    
     </div>    
 
@@ -44,11 +53,11 @@ description: Bienvenido a mi sitio web
             
             <h4><b>Clara Bujeda</b></h4>
             <p>
-                Soy Clara, estudiante de Ingeniería Informática con pasión por la programación, la algoritmia y la resolución de problemas. Me encanta enfrentar retos que me hagan pensar y mejorar mis habilidades. Disfruto trabajar en código limpio y bien estructurado, y estoy en constante aprendizaje, especialmente en áreas como estructuras de datos, gráficos por computadora y desarrollo de sistemas.
+                {{ translations[lang].home_aboutme_description }}
             </p>
             <a href="/assets/download/docs/profile/cv/CV-2024-li.pdf" class="btn btn-outline-info rounded-pill mt-3" target="_blank" rel="noopener">
                 <img src="/assets/img/icon/download.svg" alt="Descargar" width="24" height="24" class="d-inline-block align-text-top" style="filter: invert(36%) sepia(99%) saturate(747%) hue-rotate(175deg) brightness(95%) contrast(92%);">
-                Descargar CV
+                {{ translations[lang].download_cv }}
             </a>
 
         
@@ -65,7 +74,7 @@ description: Bienvenido a mi sitio web
         <div class="col-12">
             <section id="proyectos" class="py-5">
                 <div class="container">
-                    <h2 class="text-center mb-4"><b>Proyectos Destacados</b></h2>
+                    <h2 class="text-center mb-4"><b>{{ translations[lang].featured_projects }}</b></h2>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         {% include "proyects/proyectos-destacados.njk" %}
                     </div>
@@ -83,10 +92,10 @@ description: Bienvenido a mi sitio web
         <div class="col-12">
             <section id="contacto" class="py-5 text-white">
                 <div class="container">
-                    <h2 class="text-center mb-4 text-white">Contáctame</h2>
+                    <h2 class="text-center mb-4 text-white">{{ translations[lang].contact_me }}</h2>
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <p class="text-center mb-4">¿Interesado en colaborar o tienes alguna pregunta? No dudes en contactarme:</p>
+                            <p class="text-center mb-4">{{ translations[lang].contact_me_description }}</p>
                             <form>
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control rounded-pill" id="email" value="clarabujedamunoz@gmail.com" readonly onclick="this.select();" aria-label="Correo electrónico">

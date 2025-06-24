@@ -2,12 +2,21 @@
 layout: page/layout-page.njk
 title: INICIO
 description: Bienvenido a mi sitio web
+pagination:
+  data: site.languages
+  alias: lang
+  size: 1
+  addAllPagesToCollections: true
+permalink: "{{ '/' + lang if lang != 'es' else '' }}/education/index.html" 
+eleventyComputed:
+  lang: "{{ lang }}"
+  title: "{{ translations[lang].projects }}"
 ---
 
 <div style="height: 70px;"></div>
 
 <div class="container py-5">
-        <h1 class="text-center mb-5">Mi Trayectoria Profesional y Educativa</h1>
+        <h1 class="text-center mb-5">{{ translations[lang].education_title }}</h1>
 
         <div class="timeline-container">
             {% for item in trayectoria.trayectory %}

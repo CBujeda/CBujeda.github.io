@@ -2,16 +2,21 @@
 layout: page/layout-page.njk
 title: INICIO
 description: Bienvenido a mi sitio web
+pagination:
+  data: site.languages
+  alias: lang
+  size: 1
+  addAllPagesToCollections: true
+permalink: "{{ '/' + lang if lang != 'es' else '' }}/projects/index.html" 
+eleventyComputed:
+  lang: "{{ lang }}"
+  title: "{{ translations[lang].projects }}"
 ---
 
 
 <!-- PROYECTOS -->
 <div id="proyectos">
-    <div class="row">
-        <div class="col-12 text-center">
-            <h2><b>Proyectos</b></h2>
-        </div>
-    </div>    
+    <div class="my-5"></div>
     <div class="row">
         <div class="col-12">
 
@@ -19,7 +24,7 @@ description: Bienvenido a mi sitio web
             
             <section id="proyectos" class="py-5">
                 <div class="container">
-                    <h2 class="text-center mb-4">Mis Proyectos</h2>
+                    <h2 class="text-center mb-4">{{ translations[lang].my_proyects }}</h2>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         {% include "proyects/proyectos-small.njk" %}
                         <!-- Proyecto 1 -->

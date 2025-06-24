@@ -9,18 +9,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="/{{ lang if lang != 'es'}}">{{ translations[lang].menu_home }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/projects">Proyectos</a>
+          <a class="nav-link active" href="{{ '/' + lang if lang != 'es' else '' }}/projects">{{ translations[lang].menu_projects }}</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link active" href="/education">Portafolio</a>
+          <a class="nav-link active" href="{{ '/' + lang if lang != 'es' else '' }}/education">{{ translations[lang].menu_portfolio }}</a>
         </li>
         
         </li>
           <li class="nav-item">
-          <a class="nav-link active" href="/blog">Blog</a>
+          <a class="nav-link active" href="/blog">{{ translations[lang].menu_blog }}</a>
         </li>
         <!--
         </li>
@@ -41,22 +41,29 @@
           <ul class="dropdown-menu dropdown-menu-end">
             <!-- IDIOMA ESPAÑOL -->
             <li>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="/">
                 <img src="/assets/img/icon/flags/es.svg" alt="Español" width="24" height="24" class="d-inline-block align-text-top">
                 Español
               </a>
             </li>
 
-            <!-- IDIOMA INGLES -->
-            <!--
+          
             <li>
-              <a class="dropdown-item" href="/en/">
-                <img src="/assets/img/icon/flags/gb.svg" alt="Español" width="24" height="24" class="d-inline-block align-text-top">
+              <a class="dropdown-item" href="/en">
+                <img src="/assets/img/icon/flags/gb.svg" alt="English" width="24" height="24" class="d-inline-block align-text-top" >
                 
                 English
               </a>
             </li>
-            -->
+
+            <!--
+            <li>
+              <a class="dropdown-item" href="/jp">
+                <img src="/assets/img/icon/flags/jp.svg" alt="日本語" width="24" height="24" class="d-inline-block align-text-top" style="filter: drop-shadow(0 0 2px #333);">
+                日本語
+              </a>
+            </li>
+            
 
             
           </ul>
