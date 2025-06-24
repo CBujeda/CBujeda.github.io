@@ -1,4 +1,4 @@
-module.exports = function (eleventyConfig){
+module.exports = async function (eleventyConfig){
 
     // Hay que pasale las carpetas que contienen recursos
     eleventyConfig.addPassthroughCopy("src/assets/css")
@@ -6,7 +6,13 @@ module.exports = function (eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/assets/img")
     eleventyConfig.addPassthroughCopy("src/assets/download")
 
+    const { I18nPlugin } = await import("@11ty/eleventy");
 
+    eleventyConfig.addPlugin(I18nPlugin, {
+      defaultLanguage: "es",           // Idioma por defecto (sin prefijo en la URL)
+      languages: ["es", "en","jp"]    // Todos los idiomas soportados por tu sitio
+    });
+    
     eleventyConfig.addNunjucksFilter("padStart", function(str, targetLength, padString) {
       return String(str).padStart(targetLength, padString);
     });
