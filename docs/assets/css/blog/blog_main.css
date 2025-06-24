@@ -1,6 +1,6 @@
 /* Estilos para la sección de cabecera (jumbotron) */
 .header-section {
-    background: url('/assets/img/background/space.png') center center / cover no-repeat;
+    background: url('/assets/img/background/space.webp') center center / cover no-repeat;
     color: #ffffff; /* Texto blanco */
     padding: 60px 0; /* Más padding para impacto */
     margin-bottom: 40px;
