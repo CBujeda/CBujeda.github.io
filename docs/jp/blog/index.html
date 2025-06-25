@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docker Utils</title>
-    <meta name="description" content="Resumen de los comandos mas importantes de docker así como diversos ejemplos">
+    <title>INICIO</title>
+    <meta name="description" content="Bienvenido a mi sitio web">
     <link rel="icon" href="/assets/img/favicon/favicon256I.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/pages/page_styles.css">
@@ -23,18 +23,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="/jp">ホーム</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/projects">Proyectos</a>
+          <a class="nav-link active" href="/jp/projects">プロジェクト</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link active" href="/education">Portfolio</a>
+          <a class="nav-link active" href="/jp/education">ポートフォリオ</a>
         </li>
         
         </li>
           <li class="nav-item">
-          <a class="nav-link active" href="/blog">Blog</a>
+          <a class="nav-link active" href="/jp/blog">ブログ</a>
         </li>
         <!--
         </li>
@@ -55,7 +55,7 @@
           <ul class="dropdown-menu dropdown-menu-end">
             <!-- IDIOMA ESPAÑOL -->
             <li>
-                <a class="dropdown-item" href="/blog/posts/1/">
+                <a class="dropdown-item" href="/blog/">
                 <img src="/assets/img/icon/flags/es.svg" alt="Español" width="24" height="24" class="d-inline-block align-text-top">
                 Español
                 </a>
@@ -63,7 +63,7 @@
 
           
             <li>
-                <a class="dropdown-item" href="/en/blog/posts/1/">
+                <a class="dropdown-item" href="/en/blog/">
                 <img src="/assets/img/icon/flags/gb.svg" alt="English" width="24" height="24" class="d-inline-block align-text-top" >
                 English (90%)
                 </a>
@@ -71,7 +71,7 @@
 
             
             <li>
-              <a class="dropdown-item" href="/jp/blog/posts/1/">
+              <a class="dropdown-item" href="/jp/blog/">
                 <img src="/assets/img/icon/flags/jp.svg" alt="日本語" width="24" height="24" class="d-inline-block align-text-top" style="filter: drop-shadow(0 0 2px #333);">
                 日本語 (50%)
               </a>
@@ -95,8 +95,8 @@
             <div class="col-12">
                 <!-- Sección de Cabecera (Jumbotron) -->
                 <header class="header-section">
-                    <h1>Bienvenid@ a Mi Blog</h1>
-                    <p>Explora artículos interesantes, tutoriales y reflexiones sobre diversos temas.</p>
+                    <h1>私のブログへようこそ</h1>
+                    <p>いろいろなテーマの面白い記事やチュートリアル、考えを紹介します。</p>
                 </header>
             </div>    
             
@@ -111,142 +111,49 @@
    
     
 
-
-<nav class="navbar navbar-light bg-light mb-3 rounded shadow-sm px-3 py-2">
-    <a class="btn btn-outline-primary fw-bold" href="/blog/">
-        ← Volver al blog
-    </a>
-    <div class="meta">
-        Publicado el 29/3/2024 por 
-        <a href="#">Clara Bujeda</a>
-        <span class="separator mx-2">|</span>
+    <article class="blog-post">
+        <h2>Docker Utils</h2>
+        <p class="meta">
+            Publicado el 29/3/2024 por 
+            <a href="#">Clara Bujeda</a>
+            <span class="separator mx-2">|</span>
+            
+                <span class="lang-flag">
+                    <img src="/assets/img/icon/flags/es.svg" alt="es" style="height:1em;vertical-align:middle;">
+                    ES
+                </span>
+            
+        </p>
         
-            <span class="lang-flag">
-                <img src="/assets/img/icon/flags/es.svg" alt="es" style="height:1em;vertical-align:middle;">
-                ES
-            </span>
+            <img src="/assets/img/blog/docker_utils.png" class="img-fluid rounded mb-3" alt="Imagen ilustrativa sobre docker utils">
         
-    </div>
-</nav>
-
-<link rel="stylesheet" href="/assets/css/blog/posts_md.css">
-<link rel="stylesheet" href="/assets/css/highlight.css">
-<script src="/assets/js/highlight/highlight.min.js"></script>
-
-<div class="container box_white_simple" style="min-height: 90vh;">
-    <div class="row h-100">
-        <div class="col h-100 d-flex flex-column">
-            <main class="flex-grow-1 markdown">
-                <p class="mb-2 mt-2 markdown_title">Docker Utils</p>
-                <h3>Comandos y estructuras útiles de Docker</h3>
-<pre><code class="language-bash">-- IMAGENES --
-
-docker images               -Lista todas las imagenes descargadas
-docker pull node            -Descargara la imagen de docker de node
-docker pull node:18         -Descargara la imagen de node en la version 18
-            mysql
-            mongo
-docker image rm node:18     -Eliminar una imagen
+        <p>
+            Resumen de los comandos mas importantes de docker así como diversos ejemplos
+        </p>
+        <a href="/blog/posts/1/" class="read-more">Leer más &raquo;</a>
+    </article>
 
 
--- CONTENEDORES --
-
-docker create mongo                     - Crear contenedor
-docker start `ID DEL CONTENEDOR`        - Iniciar contenedor
-docker ps                               - Mostrar los contenedores que estan corriendo
-docker stop  `ID DEL CONTENEDOR`        - Detiene un contenedor
-docker ps -a                            - Mostrar todos los contenedores creados
-docker rm   `ID DEL CONTENEDOR`         - Eliminar un contenedor
-
-                                        NOTA: Podemos usar el nombre del contenedor en vez del id de este
-
-docker create --name mongito mongo      - Crear un contenedor con nombre personalizado
-
-                HOST   DOKER
-docker create -p27018:27017 --name mongito mongo    -- [USUAL] Indicamos puerto de la maquina (Para que podamos usarlo)
-
-docker logs mongito                     - Ver los logs de un container
-docker logs --follow  mongito           - Ver los logs de forma constante
 
 
--------------------------------DOCKER RUN ---------- descarga imagen, crea contenedor y lo inicia
-
-docker run mongo            - Inicia como si fuera una shell
-docker run -d mongo         - Inicia en segundo plano 
-docker run --name mongito -p27018:27017 -d mongo 
-
-
-------------------------------DOCKER NETWORK ----------------------------
-docker network ls               - Lista redes de docker
-docker network create mired     - Crer red
-docker network rm mired         - Eliminar red
-
------------------------------DOCKER FILE--------------------------------
-Dockerfile
-COMANDOS
-
-docker build -t miapp:1 .       -Para crear una imagen de un proyecto docker
-
-
-    EJEMPLO DE ARCHIVO:
-            FROM node:18
-            RUN mkdir -p /home/app
-            COPY . /home/app
-            EXPOSE 3000
-            CMD [&quot;node&quot;,&quot;/home/app/index.js&quot;]
-
-----------------------------DOCKER COMPOSE-----------------------------
-docker-compose.yml
-
-EJEMPLO ARCHIVO:
-version: &quot;3.9&quot;
-services:
-  appnode:
-    build: .
-    ports:
-      - &quot;3000:3000&quot;
-    links:
-      - mysql_pink
-  mysql_pink:
-    image: mysql
-    ports:
-      - &quot;3307:3306&quot;
-      - &quot;33061:33060&quot;
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-
-COMANDOS
-docker compose up           - Generar containers y runnerar
-docker compose down         - Elimina todo lo que creo
-docker compose -f docker-compose-dev.yml up
-----------------------------------------------------------
-</code></pre>
-<h3>EJEMPLOS</h3>
-<pre><code class="language-bash">----MYSQL----
-docker create -p3307:3306 -p33061:33060 --name mysql_pink -e MYSQL_ROOT_PASSWORD=root mysql
-
-docker run -p3307:3306 -p33061:33060 --name mysql_pink -e MYSQL_ROOT_PASSWORD=root mysql
-
-
---------------------------------EJEMPLO DEPROYCETO----------------------
-
-docker create -p3307:3306 -p33061:33060 --name mysql_pink --network mired -e MYSQL_ROOT_PASSWORD=root mysql
-docker create -p3000:3000 --name appnode --network mired miapp:1
-</code></pre>
-
-            </main>
-        </div>
-    </div>
-</div>
-
-<!-- and it's easy to individually load additional languages -->
-<script src="/assets/js/highlight/cpp.min.js"></script>
-<script src="/assets/js/highlight/java.min.js"></script>
-<script src="/assets/js/highlight/markdown.min.js"></script>
-<script src="/assets/js/highlight/css.min.js"></script>
-<script src="/assets/js/highlight/bash.min.js"></script>
-
-<script>hljs.highlightAll();</script>
+    <!-- Paginación de Bootstrap (opcional) -->
+    <nav aria-label="Page navigation example" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <!--
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+            </li>
+            -->
+            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+            <!--
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            
+            <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
+            </li>-->
+        </ul>
+    </nav>
 
 
 
@@ -258,7 +165,7 @@ docker create -p3000:3000 --name appnode --network mired miapp:1
 <div class="col-lg-4">
     <!-- Sección Acerca de Mí -->
     <div class="sidebar-section">
-        <h4>Acerca de Mí</h4>
+        <h4>私について</h4>
         <div class="d-flex align-items-center mb-3">
             <img src="https://avatars.githubusercontent.com/u/95882405" alt="Clara Bujeda" class="rounded-circle me-3" width="64" height="64" style="object-fit: cover;">
             <div>
@@ -272,7 +179,7 @@ docker create -p3000:3000 --name appnode --network mired miapp:1
 
     <!-- Sección Archivo -->
     <div class="sidebar-section">
-        <h4>Archivo</h4>
+        <h4>アーカイブ</h4>
         <ul>
             
                 <li>
@@ -286,7 +193,7 @@ docker create -p3000:3000 --name appnode --network mired miapp:1
 
     <!-- Sección Categorías -->
     <div class="sidebar-section">
-        <h4>Categorías</h4>
+        <h4>カテゴリー</h4>
         <ul>
             
                 <li>
@@ -300,7 +207,7 @@ docker create -p3000:3000 --name appnode --network mired miapp:1
 
     <!-- Sección Sígueme -->
     <div class="sidebar-section">
-        <h4>Sígueme</h4>
+        <h4>フォローしてね</h4>
         <div class="d-flex justify-content-center gap-3 mt-4 social-links-animated">
             <a href="https://www.linkedin.com/in/clara-bujeda/" target="_blank" rel="noopener" class="btn rounded-pill p-2 social-link" style="background: #fff; border: 1px solid #0a66c2;">
                 <img src="/assets/img/icon/social/linkedin.svg" alt="LinkedIn" width="28" height="28" class="social-icon" style="filter: invert(32%) sepia(98%) saturate(2092%) hue-rotate(186deg) brightness(97%) contrast(101%);">
@@ -326,7 +233,7 @@ docker create -p3000:3000 --name appnode --network mired miapp:1
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                <p class="mb-0">© Clara Bujeda Muñoz. Todos los derechos reservados.</p>
+                <p class="mb-0">© Clara Bujeda Muñoz. 全著作権所有。</p>
             </div>
             <div class="col-md-6">
                 <ul class="list-inline mb-0 text-center text-md-end">

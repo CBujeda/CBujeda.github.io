@@ -2,6 +2,15 @@
 layout: blog/layout_container_blog.njk
 title: INICIO
 description: Bienvenido a mi sitio web
+pagination:
+  data: site.languages
+  alias: lang
+  size: 1      
+  addAllPagesToCollections: true
+permalink: "{{ '/' + lang if lang != 'es' else '' }}/blog/index.html"
+eleventyComputed:
+    lang: "{{ lang }}"
+    title: "{{ title or translations[lang].home }}"
 ---
 
 {% for post in collections.blogPosts %}

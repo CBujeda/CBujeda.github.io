@@ -1,5 +1,11 @@
 {
   "about_me": "About Me",
+  "blog_title": "Welcome to My Blog",
+  "blog_title_acerca_de_mi": "About Me",
+  "blog_title_archivo": "Archive",
+  "blog_title_categorys": "Categories",
+  "blog_title_description": "Explore interesting articles, tutorials, and insights on a variety of topics.",
+  "blog_title_sigueme": "Follow me",
   "contact_me": "Contact me",
   "contact_me_description": "Interested in collaborating or have any questions? Don't hesitate to contact me:",
   "download_cv": "Download CV",

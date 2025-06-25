@@ -22,7 +22,7 @@ description: Bienvenido a mi sitio web
 <div class="col-lg-4">
     <!-- Sección Acerca de Mí -->
     <div class="sidebar-section">
-        <h4>Acerca de Mí</h4>
+        <h4>{{ translations[lang].blog_title_acerca_de_mi }}</h4>
         <div class="d-flex align-items-center mb-3">
             <img src="https://avatars.githubusercontent.com/u/95882405" alt="Clara Bujeda" class="rounded-circle me-3" width="64" height="64" style="object-fit: cover;">
             <div>
@@ -36,7 +36,7 @@ description: Bienvenido a mi sitio web
 
     <!-- Sección Archivo -->
     <div class="sidebar-section">
-        <h4>Archivo</h4>
+        <h4>{{ translations[lang].blog_title_archivo }}</h4>
         <ul>
             {% for archive in collections.archives %}
                 <li>
@@ -50,7 +50,7 @@ description: Bienvenido a mi sitio web
 
     <!-- Sección Categorías -->
     <div class="sidebar-section">
-        <h4>Categorías</h4>
+        <h4>{{ translations[lang].blog_title_categorys }}</h4>
         <ul>
             {% for category in collections.categories %}
                 <li>
@@ -64,7 +64,7 @@ description: Bienvenido a mi sitio web
 
     <!-- Sección Sígueme -->
     <div class="sidebar-section">
-        <h4>Sígueme</h4>
+        <h4>{{ translations[lang].blog_title_sigueme }}</h4>
         <div class="d-flex justify-content-center gap-3 mt-4 social-links-animated">
             <a href="https://www.linkedin.com/in/clara-bujeda/" target="_blank" rel="noopener" class="btn rounded-pill p-2 social-link" style="background: #fff; border: 1px solid #0a66c2;">
                 <img src="/assets/img/icon/social/linkedin.svg" alt="LinkedIn" width="28" height="28" class="social-icon" style="filter: invert(32%) sepia(98%) saturate(2092%) hue-rotate(186deg) brightness(97%) contrast(101%);">
