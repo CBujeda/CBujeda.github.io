@@ -19,52 +19,60 @@ module.exports = async function (eleventyConfig){
       // Colección de archivos por mes y año
     eleventyConfig.addCollection("archives", function(collectionApi) {
       const months = [
-        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-        "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+      "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+      "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
       ];
       const archiveMap = new Map();
-      collectionApi.getFilteredByGlob("src/blog/posts/*.md").forEach(post => {
-        const date = new Date(post.date);
-        const year = date.getFullYear();
-        const month = date.getMonth(); // 0-indexed
-        const key = `${year}-${month}`;
-        if (!archiveMap.has(key)) {
-          archiveMap.set(key, {
-            year,
-            month,
-            monthName: months[month],
-            count: 1
-          });
-        } else {
-          archiveMap.get(key).count++;
-        }
+      collectionApi.getFilteredByGlob([
+      "src/blog/posts/*.md",
+      "src/blog/posts/*.njk"
+      ]).forEach(post => {
+      const date = new Date(post.date);
+      const year = date.getFullYear();
+      const month = date.getMonth(); // 0-indexed
+      const key = `${year}-${month}`;
+      if (!archiveMap.has(key)) {
+        archiveMap.set(key, {
+        year,
+        month,
+        monthName: months[month],
+        count: 1
+        });
+      } else {
+        archiveMap.get(key).count++;
+      }
       });
       // Ordena del más reciente al más antiguo
       return Array.from(archiveMap.values()).sort((a, b) => {
-        if (a.year !== b.year) return b.year - a.year;
-        return b.month - a.month;
+      if (a.year !== b.year) return b.year - a.year;
+      return b.month - a.month;
       });
     });
-
     // Colección de categorías únicas
     eleventyConfig.addCollection("categories", function(collectionApi) {
-    const categoriesSet = new Set();
-    collectionApi.getFilteredByGlob("src/blog/posts/*.md").forEach(post => {
+      const categoriesSet = new Set();
+      collectionApi.getFilteredByGlob([
+      "src/blog/posts/*.md",
+      "src/blog/posts/*.njk"
+      ]).forEach(post => {
       if (post.data.tags) {
         post.data.tags.forEach(tag => categoriesSet.add(tag));
       }
+      });
+      return [...categoriesSet].sort();
     });
-    return [...categoriesSet].sort();
-  });
 
-  // Añade una colección para los posts del blog
-  // Esto hará que todos los archivos en blog/posts/ sean accesibles como `collections.blogPosts`
-  eleventyConfig.addCollection("blogPosts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/posts/*.md").sort((a, b) => {
+    // Añade una colección para los posts del blog
+    // Esto hará que todos los archivos en blog/posts/ sean accesibles como `collections.blogPosts`
+    eleventyConfig.addCollection("blogPosts", function(collectionApi) {
+      return collectionApi.getFilteredByGlob([
+      "src/blog/posts/*.md",
+      "src/blog/posts/*.njk"
+      ]).sort((a, b) => {
       // Ordena los posts por fecha, del más nuevo al más antiguo
       return b.date - a.date;
+      });
     });
-  });
 
   // Filtro Nunjucks personalizado para ordenar la colección por el año de inicio.
   // Es robusto para manejar formatos como 'YYYY' o 'YYYY-Actualidad'.
