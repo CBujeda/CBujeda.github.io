@@ -9,8 +9,8 @@ pagination:
   addAllPagesToCollections: true
 permalink: "{{ '/' + lang if lang != 'es' else '' }}/index.html"
 eleventyComputed:
-  lang: "{{ lang }}"
-  title: "{{ translations[lang].home }}"
+    lang: "{{ lang }}"
+    title: "{{ title or translations[lang].home }}"
 ---
 
 
