@@ -1,5 +1,5 @@
 ---
-layout: blog/layout-blog.njk
+layout: blog/layout_container_blog.njk
 description: Bienvenido a mi sitio web
 ---
 
@@ -9,6 +9,17 @@ description: Bienvenido a mi sitio web
     <a class="btn btn-outline-primary fw-bold" href="/blog/">
         ← Volver al blog
     </a>
+    <div class="meta">
+        Publicado el {{ date.toLocaleDateString('es-ES') }} por 
+        <a href="#">{{ author }}</a>
+        <span class="separator mx-2">|</span>
+        {% if lang_post %}
+            <span class="lang-flag">
+                <img src="/assets/img/icon/flags/{{ lang_post }}.svg" alt="{{ lang_post }}" style="height:1em;vertical-align:middle;">
+                {{ lang_post | upper }}
+            </span>
+        {% endif %}
+    </div>
 </nav>
 
 <link rel="stylesheet" href="/assets/css/blog/posts_md.css">

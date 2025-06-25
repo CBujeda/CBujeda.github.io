@@ -1,0 +1,81 @@
+---
+layout: blog/layout-blog.njk
+title: INICIO
+description: Bienvenido a mi sitio web
+---
+
+
+<div class="row">
+<!-- Columna principal para las entradas del blog -->
+<div class="col-lg-8">
+    <!-- Entrada de Blog 1 -->
+   
+    {{content | safe}}
+
+
+
+
+
+</div>
+
+<!-- Columna de la barra lateral -->
+<div class="col-lg-4">
+    <!-- Sección Acerca de Mí -->
+    <div class="sidebar-section">
+        <h4>Acerca de Mí</h4>
+        <div class="d-flex align-items-center mb-3">
+            <img src="https://avatars.githubusercontent.com/u/95882405" alt="Clara Bujeda" class="rounded-circle me-3" width="64" height="64" style="object-fit: cover;">
+            <div>
+                <h5 class="mb-1">Clara Bujeda</h5>
+                <p class="mb-0 small text-muted">
+                    ¡Hola! Soy una apasionada de la tecnología y el aprendizaje continuo. En este blog comparto mis experiencias, reflexiones y guías sobre los temas que más me inspiran. Espero que encuentres aquí recursos útiles y motivadores para tu propio camino.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Archivo -->
+    <div class="sidebar-section">
+        <h4>Archivo</h4>
+        <ul>
+            {% for archive in collections.archives %}
+                <li>
+                    <a > <!--href="/blog/archivo/{{ archive.year }}/{{ (archive.month + 1) | string | padStart(2, '0') }}/" -->
+                        {{ archive.monthName }} {{ archive.year }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Sección Categorías -->
+    <div class="sidebar-section">
+        <h4>Categorías</h4>
+        <ul>
+            {% for category in collections.categories %}
+                <li>
+                    <a >     <!-- href="/blog/categorias/{{ category | slug }}/" -->
+                        {{ category | title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Sección Sígueme -->
+    <div class="sidebar-section">
+        <h4>Sígueme</h4>
+        <div class="d-flex justify-content-center gap-3 mt-4 social-links-animated">
+            <a href="https://www.linkedin.com/in/clara-bujeda/" target="_blank" rel="noopener" class="btn rounded-pill p-2 social-link" style="background: #fff; border: 1px solid #0a66c2;">
+                <img src="/assets/img/icon/social/linkedin.svg" alt="LinkedIn" width="28" height="28" class="social-icon" style="filter: invert(32%) sepia(98%) saturate(2092%) hue-rotate(186deg) brightness(97%) contrast(101%);">
+            </a>
+            <a href="https://github.com/CBujeda" target="_blank" rel="noopener" class="btn rounded-pill p-2 social-link" style="background: #fff; border: 1px solid #24292f;">
+                <img src="/assets/img/icon/social/github.svg" alt="GitHub" width="28" height="28" class="social-icon" style="filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0.5) contrast(100%);">
+            </a>
+            <a href="https://www.youtube.com/@clarabujeda" target="_blank" rel="noopener" class="btn rounded-pill p-2 social-link" style="background: #fff; border: 1px solid #ff0000;">
+                <img src="/assets/img/icon/social/youtube.svg" alt="YouTube" width="28" height="28" class="social-icon" style="filter: invert(18%) sepia(99%) saturate(7482%) hue-rotate(1deg) brightness(98%) contrast(119%);">
+            </a>
+        </div>
+    </div>
+</div>
+</div>
