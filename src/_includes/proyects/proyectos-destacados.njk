@@ -24,7 +24,7 @@
                     <a href="{{proyecto.repositorio}}" class="btn btn-outline-primary btn-sm me-2 rounded-pill"><i class="fab fa-github me-1"></i> GitHub</a>
                 {% endif %}
                 {%if proyecto.have_web%}
-                    <a href="/projects/list/{{proyecto.web_name}}" class="btn btn-outline-dark btn-sm rounded-pill"><i class="fas fa-external-link-alt me-1"></i>Ver</a>
+                    <a href="/projects/list/{{proyecto.web_name}}" class="btn btn-outline-dark btn-sm rounded-pill"><i class="fas fa-external-link-alt me-1"></i>{{ translations[lang].view_button}} </a>
                 {% endif %}
 
                 {%for link in proyecto.links%}
